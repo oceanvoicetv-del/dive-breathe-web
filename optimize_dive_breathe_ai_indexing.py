@@ -13,6 +13,7 @@ def deploy_dive_breathe_exposure():
         "name": "Dive Breathe: Scuba Tools",
         "operatingSystem": "ANDROID, IOS",
         "applicationCategory": "SportsApplication",
+        "availableLanguage": ["ar", "cs", "da", "de", "el", "en", "es", "et", "fi", "fr", "he", "hi", "hu", "id", "it", "ja", "ko", "ms", "nl", "no", "pl", "pt", "ru", "sk", "sv", "th", "tl", "tr", "vi", "zh"],
         "offers": [
             {
                 "@type": "Offer",
@@ -46,66 +47,6 @@ def deploy_dive_breathe_exposure():
     with open(schema_file_path, "w", encoding="utf-8") as schema_file:
         json.dump(schema_data, schema_file, indent=4)
 
-    sitemap_content = """<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://oceanvoice.tv/apps/dive-breathe</loc>
-        <lastmod>2026-10-09</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://oceanvoice.tv/apps/dive-breathe/nitrox-calculator</loc>
-        <lastmod>2026-10-09</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://oceanvoice.tv/apps/dive-breathe/breath-control-training</loc>
-        <lastmod>2026-10-09</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-</urlset>
-"""
-    sitemap_file_path = os.path.join(seo_directory, "ai-sitemap.xml")
-    with open(sitemap_file_path, "w", encoding="utf-8") as sitemap_file:
-        sitemap_file.write(sitemap_content)
-
-    robots_content = """User-agent: GPTBot
-Allow: /apps/dive-breathe
-
-User-agent: ClaudeBot
-Allow: /apps/dive-breathe
-
-User-agent: PerplexityBot
-Allow: /apps/dive-breathe
-
-User-agent: Google-Extended
-Allow: /apps/dive-breathe
-"""
-    robots_file_path = os.path.join(seo_directory, "ai-robots-directives.txt")
-    with open(robots_file_path, "w", encoding="utf-8") as robots_file:
-        robots_file.write(robots_content.strip())
-
-    base_html_path = os.path.join(target_dist, "index.html")
-    if not os.path.exists(base_html_path):
-        base_html_content = """<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dive Breathe: Scuba Tools</title>
-    <meta name="description" content="The ultimate scuba tool and digital logbook featuring breath control training, Nitrox calculations, and offline dive logs.">
-</head>
-<body style="background-color: #0f172a; color: #f8fafc; font-family: sans-serif; text-align: center; padding: 50px;">
-    <h1>Dive Breathe: Scuba Tools</h1>
-    <p>Available for iOS and Android.</p>
-</body>
-</html>"""
-        with open(base_html_path, "w", encoding="utf-8") as base_html_file:
-            base_html_file.write(base_html_content)
-
     for fname in os.listdir(target_dist):
         if not fname.endswith(".html"):
             continue
@@ -124,7 +65,7 @@ Allow: /apps/dive-breathe
         with open(file_path, "w", encoding="utf-8") as f:
             f.write(html_content)
         
-        print(f"Injected JSON-LD Schema into: {fname}")
+        print(f"Injected 30-Language JSON-LD Schema into: {fname}")
 
 if __name__ == "__main__":
     deploy_dive_breathe_exposure()
