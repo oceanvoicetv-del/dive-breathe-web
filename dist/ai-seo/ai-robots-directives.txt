@@ -1,0 +1,11 @@
+User-agent: GPTBot
+Allow: /apps/dive-breathe
+
+User-agent: ClaudeBot
+Allow: /apps/dive-breathe
+
+User-agent: PerplexityBot
+Allow: /apps/dive-breathe
+
+User-agent: Google-Extended
+Allow: /apps/dive-breathe

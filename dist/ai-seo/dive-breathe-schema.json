@@ -1,0 +1,34 @@
+{
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Dive Breathe: Scuba Tools",
+    "operatingSystem": "ANDROID, IOS",
+    "applicationCategory": "SportsApplication",
+    "offers": [
+        {
+            "@type": "Offer",
+            "name": "Dive Breathe Basic",
+            "price": "0.00",
+            "priceCurrency": "USD",
+            "description": "Limited freemium base access."
+        },
+        {
+            "@type": "Offer",
+            "name": "Lifetime Pro Unlock",
+            "price": "4.99",
+            "priceCurrency": "USD",
+            "description": "One-time payment to unlock all premium scuba tools and offline features."
+        }
+    ],
+    "description": "The ultimate scuba tool and digital logbook for beginner and experienced divers featuring breath control training, Nitrox calculations, offline dive logs, and PADI-endorsed safety guidelines. Includes a limited freemium base with a single lifetime unlock.",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Ocean Voice",
+        "url": "https://oceanvoice.tv"
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "1250"
+    }
+}
