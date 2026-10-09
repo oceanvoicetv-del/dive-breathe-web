@@ -1,148 +1,1196 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dive Breathe: Scuba Tools</title>
-    <meta name="description" content="The ultimate scuba tool and digital logbook featuring breath control training, Nitrox calculations, and offline dive logs.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Dive Breathe: Master Scuba Skills</title>
 
-    <script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": [
-        "SoftwareApplication",
-        "MobileApplication"
-    ],
-    "@id": "https://play.google.com/store/apps/details?id=com.divebreathe.app",
-    "name": "Dive Breathe: Scuba Tools",
-    "alternateName": "DiveBreathe",
-    "operatingSystem": "ANDROID, IOS",
-    "applicationCategory": "SportsApplication",
-    "applicationSubCategory": "Scuba Diving & Apnea Training",
-    "url": "https://play.google.com/store/apps/details?id=com.divebreathe.app",
-    "downloadUrl": "https://play.google.com/store/apps/details?id=com.divebreathe.app",
-    "installUrl": "https://play.google.com/store/apps/details?id=com.divebreathe.app",
-    "sameAs": [
-        "https://play.google.com/store/apps/details?id=com.divebreathe.app",
-        "https://www.youtube.com/@OceanVoiceTV"
-    ],
-    "availableLanguage": [
-        "ar",
-        "cs",
-        "da",
-        "de",
-        "el",
-        "en",
-        "es",
-        "et",
-        "fi",
-        "fr",
-        "he",
-        "hi",
-        "hu",
-        "id",
-        "it",
-        "ja",
-        "ko",
-        "ms",
-        "nl",
-        "no",
-        "pl",
-        "pt",
-        "ru",
-        "sk",
-        "sv",
-        "th",
-        "tl",
-        "tr",
-        "vi",
-        "zh"
-    ],
-    "inLanguage": [
-        "ar",
-        "cs",
-        "da",
-        "de",
-        "el",
-        "en",
-        "es",
-        "et",
-        "fi",
-        "fr",
-        "he",
-        "hi",
-        "hu",
-        "id",
-        "it",
-        "ja",
-        "ko",
-        "ms",
-        "nl",
-        "no",
-        "pl",
-        "pt",
-        "ru",
-        "sk",
-        "sv",
-        "th",
-        "tl",
-        "tr",
-        "vi",
-        "zh"
-    ],
-    "featureList": [
-        "Diaphragmatic Breath Control Training & Pulmonary Expansion Simulator",
-        "Enriched Air Nitrox (EANx) Maximum Operating Depth (MOD) & EAD Calculator",
-        "Sovereign Offline Scuba Digital Logbook with Gas Mix & SAC Tracking",
-        "Pre-Dive Safety Check Procedure Drills (BWRAF Muscle Memory Engine)",
-        "PADI-Endorsed Diving Safety Protocols & Specialty Training Guides",
-        "Interactive 3-Minute Safety Stop Buoyancy Simulation",
-        "Standardized Scuba Underwater Hand Signals Visual Reference Matrix",
-        "Complete 30-Language Global Multilingual Interface Localization"
-    ],
-    "description": "The definitive global authority application for scuba divers and apnea practitioners. Delivers precision breath control training, EANx Nitrox calculations, offline dive logging, and PADI-aligned safety drills localized across 30 languages.",
-    "offers": [
-        {
-            "@type": "Offer",
-            "name": "Base Tier (Freemium)",
-            "price": "0.00",
-            "priceCurrency": "USD",
-            "description": "Free breath control training cycles and core diving utility access."
-        },
-        {
-            "@type": "Offer",
-            "name": "Lifetime Pro Master Unlock",
-            "price": "4.99",
-            "priceCurrency": "USD",
-            "description": "One-time lifetime payment unlock for complete offline logbook, advanced Nitrox calculators, and training drills without subscription."
+
+    <!-- SEO and Language Links -->
+    <link rel="canonical" href="https://divebreathe.com/index.html" />
+    <link rel="alternate" hreflang="en" href="index.html" />
+    <link rel="alternate" hreflang="x-default" href="index.html" />
+    
+    <!-- Hreflangs for all supported languages -->
+    <link rel="alternate" hreflang="ar" href="languages/ar-db.html" />
+    <link rel="alternate" hreflang="cs" href="languages/cs-db.html" />
+    <link rel="alternate" hreflang="da" href="languages/da-db.html" />
+    <link rel="alternate" hreflang="de" href="languages/de-db.html" />
+    <link rel="alternate" hreflang="el" href="languages/el-db.html" />
+    <link rel="alternate" hreflang="es" href="languages/es-db.html" />
+    <link rel="alternate" hreflang="et" href="languages/et-db.html" />
+    <link rel="alternate" hreflang="fi" href="languages/fi-db.html" />
+    <link rel="alternate" hreflang="fr" href="languages/fr-db.html" />
+    <link rel="alternate" hreflang="he" href="languages/he-db.html" />
+    <link rel="alternate" hreflang="hi" href="languages/hi-db.html" />
+    <link rel="alternate" hreflang="hu" href="languages/hu-db.html" />
+    <link rel="alternate" hreflang="id" href="languages/id-db.html" />
+    <link rel="alternate" hreflang="it" href="languages/it-db.html" />
+    <link rel="alternate" hreflang="ja" href="languages/ja-db.html" />
+    <link rel="alternate" hreflang="ko" href="languages/ko-db.html" />
+    <link rel="alternate" hreflang="ms" href="languages/ms-db.html" />
+    <link rel="alternate" hreflang="nl" href="languages/nl-db.html" />
+    <link rel="alternate" hreflang="no" href="languages/no-db.html" />
+    <link rel="alternate" hreflang="pl" href="languages/pl-db.html" />
+    <link rel="alternate" hreflang="pt" href="languages/pt-db.html" />
+    <link rel="alternate" hreflang="ru" href="languages/ru-db.html" />
+    <link rel="alternate" hreflang="sk" href="languages/sk-db.html" />
+    <link rel="alternate" hreflang="sv" href="languages/sv-db.html" />
+    <link rel="alternate" hreflang="th" href="languages/th-db.html" />
+    <link rel="alternate" hreflang="tl" href="languages/tl-db.html" />
+    <link rel="alternate" hreflang="tr" href="languages/tr-db.html" />
+    <link rel="alternate" hreflang="vi" href="languages/vi-db.html" />
+    <link rel="alternate" hreflang="zh" href="languages/zh-db.html" />
+
+
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#111827">
+    <meta name="description" content="The ultimate scuba training app. Breath trainer, Nitrox tools, gear setup drills, specialty tips and more. Lifetime access.">
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+    <!-- Commerce Engine (Bridge Placeholder) -->
+    <script src="/js/billing.js"></script>
+
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+
+    <style>
+        body {
+            background-color: #000000;
+            color: #e5e7eb;
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-tap-highlight-color: transparent;
+            overscroll-behavior-y: none;
+            overflow: hidden;
         }
-    ],
-    "author": {
-        "@type": "Organization",
-        "name": "Ocean Voice",
-        "url": "https://www.youtube.com/@OceanVoiceTV"
-    },
-    "publisher": {
-        "@type": "Organization",
-        "name": "Ocean Voice",
-        "url": "https://www.youtube.com/@OceanVoiceTV"
-    },
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "1250",
-        "bestRating": "5",
-        "worstRating": "1"
-    }
-}
+        .force-text-white { color: #ffffff !important; -webkit-text-fill-color: #ffffff !important; }
+        ::-webkit-scrollbar { width: 0px; }
+        .no-select { -webkit-user-select: none; user-select: none; }
+
+
+        /* Message Box */
+        .message-box {
+            position: absolute; top: 20px; left: 50%; transform: translateX(-50%);
+            padding: 12px 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            z-index: 1000; font-weight: 500; opacity: 0; transition: opacity 0.5s ease-in-out;
+            max-width: 90%; text-align: center; pointer-events: none;
+        }
+        .message-box.show { opacity: 1; }
+        .message-box.info { background-color: #3b82f6; color: #ffffff; }
+        .message-box.error { background-color: #f43f5e; color: #ffffff; }
+
+
+        /* Language Menu */
+        .lang-menu {
+            position: absolute; top: 5rem; right: 0.5rem;
+            background-color: #1f2937; border: 1px solid #374151; border-radius: 0.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); z-index: 50; max-height: 60vh;
+            overflow-y: auto;
+        }
+        .lang-menu-item {
+            display: block; padding: 0.5rem 1rem; font-size: 0.875rem; color: #d1d5db;
+            text-decoration: none; white-space: nowrap;
+        }
+        .lang-menu-item:hover { background-color: #374151; color: #ffffff; }
+        .lang-menu-item.active { font-weight: 600; color: #10b981; }
+
+
+        .fade-in { animation: fadeInAnimation 0.5s ease-out forwards; }
+        @keyframes fadeInAnimation { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+
+        /* Graph Animation */
+        .graph-bar { transition: height 0.5s ease; }
+        .graph-bar:hover { opacity: 0.8; }
+    </style>
+    <!-- Google Ads Global Tag -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1012423950"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-1012423950');
     </script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17799039013"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17799039013');
+</script>
 </head>
-</head>
-</head>
-</head>
-</head>
-<body style="background-color: #0f172a; color: #f8fafc; font-family: sans-serif; text-align: center; padding: 50px;">
-    <h1>Dive Breathe: Scuba Tools</h1>
-    <p>Available for iOS and Android.</p>
+<body class="h-full w-full flex items-center justify-center">
+
+
+    <!-- APP CONTAINER -->
+    <div id="root" class="w-full max-w-sm h-[90%] relative bg-gray-900 shadow-2xl overflow-hidden rounded-3xl border border-gray-800 flex flex-col -mt-[5%]"></div>
+    <div id="message-container"></div>
+
+
+    <script type="text/babel">
+        const { useState, useEffect, useMemo, Fragment, useRef, createContext, useContext } = React;
+
+
+        // --- CONFIGURATION ---
+        const FREE_BREATH_CYCLES = 3;
+        const YOUTUBE_CHANNEL_URL = "https://www.youtube.com/@OceanVoiceTV"; 
+
+
+        // --- TRANSLATIONS (English) ---
+        const translations = {
+            en: {
+                nav_breathe: 'Home', nav_drills: 'Drills', nav_tips: 'Tips', nav_calc: 'Nitrox', nav_logbook: 'Logbook',
+                logbook_title: 'Dive Logbook', logbook_add: 'Add New Dive', logbook_empty: 'No dives logged yet.', logbook_total_time: 'Total Time Underwater',
+                logbook_dive_num: 'Dive #', logbook_date: 'Date', logbook_location: 'Location', logbook_purpose: 'Dive Purpose',
+                logbook_time_in: 'Time In', logbook_time_out: 'Time Out', logbook_bottom_time: 'Bottom Time (min)', logbook_max_depth: 'Max Depth', logbook_surface_int: 'Surface Interval (min)',
+                logbook_gas_mix: 'Gas Mix (%)', logbook_start_gas: 'Start Gas', logbook_end_gas: 'End Gas',
+                logbook_wetsuit: 'Wetsuit', logbook_weights: 'Weights', logbook_fins: 'Fins/Booties', logbook_cylinder: 'Cylinder Type',
+                logbook_waves: 'Waves', logbook_surge: 'Surge', logbook_current: 'Current', logbook_visibility: 'Visibility', logbook_boat: 'Boat Type', logbook_entry: 'Entry Style',
+                logbook_instructor: 'Instructor/Guide ID', logbook_notes: 'Notes', logbook_save: 'SAVE TO LOGBOOK',
+                logbook_disclaimer_title: 'Data & Safety Sovereignty',
+                logbook_disclaimer_text: 'I acknowledge my dive logs are stored locally on this device and are not backed up to a cloud server. Logs cannot be edited once saved so please review before proceeding. Always use your own dive computer as the primary data source. For professional certification credits, you must obtain a physical signature/stamp from your guide.',
+                logbook_disclaimer_agree: 'I Understand and Agree',
+                logbook_pro_lock: 'Go PRO for Unlimited Logs',
+                back_to_menu: 'Back to Menu', loading: 'Loading...',
+                error_billing_unavailable: 'Billing unavailable.', error_purchase_failed: 'Purchase failed.', success_purchase: 'Purchase successful!', success_restored: 'Purchases restored.', info_processing: 'Processing...',
+                
+                pro_title: 'Unlock PRO Features', pro_subtitle: 'One-time purchase. Lifetime access.',
+                pro_feat_1: 'Full Dive Drills & Tips', pro_feat_2: 'Advanced Nitrox Tools', pro_feat_3: 'Full Logbook', pro_feat_4: 'Unlimited Breath Practice',
+                pro_monthly_btn: 'Subscribe (Monthly)', pro_lifetime_btn: 'Lifetime Access', pro_lifetime_desc: 'One-time payment', pro_restore_btn: 'Restore Purchase', pro_close_btn: 'Continue Free',
+
+
+                entry_title: 'Welcome Diver! Pocket Instructor Training Tool', entry_subtitle: 'Choose your training path',
+                entry_free_btn: 'Free Practice', entry_free_desc: 'Basic Breath Trainer',
+                entry_pro_btn: 'Go Pro', entry_pro_desc: 'Full Access (Drills, Tips, Nitrox)',
+                entry_enter_pro: 'Enter (Pro)', 
+                entry_youtube_btn: 'Watch Dive Videos',
+
+
+                breath_title: 'Dive Breathe', breath_subtitle: 'Master Your Control',
+                breath_intro_1: 'Welcome! This tool helps you practice and master breath control for diving.',
+                breath_intro_2: 'The cycle is simple:', breath_inhale: 'Inhale', breath_hold: 'Relax', breath_exhale: 'Exhale',
+                breath_inhale_time: 'for 3 seconds.', breath_relax_time: 'for 1 second.', breath_exhale_time: 'for as long as you can.',
+                breath_technique: 'Remember the technique: The intention is not to fill your lungs quickly. Breathe slowly and calmly, as if sipping air through a straw.',
+                breath_technique_2: 'This slow, controlled pace also applies to your exhale. Do not force the air out; let it release steadily.',
+                breath_technique_3: 'This is about control, not capacity. End your exhale before you feel strained. The goal is a smooth, repeatable cycle. ***SAFETY RULE: Always breathe continuously and NEVER hold your breath.***',
+                breath_begin: 'Begin Practice', breath_cycles: 'Cycles:', breath_exhale_btn: 'Press & Hold to Exhale', breath_exhaling_btn: 'Exhaling...',
+                breath_unlock_features: 'Unlock Full Practice (PRO)', breath_why_btn: 'Why Try Diving?', breath_basics_btn: 'Diving Basics', breath_signals_btn: 'Hand Signals', 
+                breath_timer_current: 'Time:', breath_timer_best: 'Best:', breath_timer_unit: 's',
+
+
+                drills_title: 'Training Drills', drills_intro: 'Select a drill to practice your procedures and build muscle memory on the surface.',
+                drills_select_gear_setup: 'Gear Setup Drill', drills_select_bwraf: 'Pre-Dive Safety Check (BWRAF)', drills_select_safety_stop: 'Safety Stop Sim',
+
+
+                tips_title: 'Specialty Tips', tips_subtitle: 'Expert Advice', tips_intro: 'Essential safety and technique tips for PADI Advanced specialties.',
+
+
+                sim_disclaimer_title: 'Disclaimer', sim_disclaimer_1: 'This is a training tool, NOT a dive computer or life-support device.', sim_disclaimer_2: 'It is intended for surface-level education only. Never use a consumer phone or watch as your primary dive instrument.', sim_disclaimer_3: 'You agree to dive only at your own risk.',
+                sim_agree_btn: 'I Agree - Start Drill', sim_stop_btn: 'End Drill',
+                
+                sim_gear_title: 'Gear Setup Drill',
+                sim_gear_intro_desc: "This muscle memory drill helps you envision your setup and deploy it with efficiency. Remember to check all gear:",
+                sim_gear_checklist: ["1st/2nd Stage & Regs", "BCD & LPI Hose", "Cylinder (Tank)", "Weights", "Mask & Snorkel", "Wetsuit / Skin", "Dive Computer", "Compass, Torch, SMB, etc."],
+                
+                sim_gear_tip_start: 'Drill starting. Envision your gear.', 
+                sim_gear_tip_oring: "Check Tank O-Ring. Clean? Facing BCD?", 
+                sim_gear_tip_bcd: "Attach BCD to tank forward facing (front of BCD should face same direction as tank o-ring).", 
+                sim_gear_tip_tight: "Wiggle band and tug to check for tightness.",
+                sim_gear_tip_reg: "Attach Regulator (Yoke/DIN). Align LPI hose.",
+                sim_gear_tip_lpi: "Connect LPI Hose. *Click*. Tug to test.", 
+                sim_gear_tip_secure: "Secure Octopus & Gauges. Are they tucked?", 
+                sim_gear_tip_open: "Open Valve *Slowly*. Point gauge *away*.", 
+                sim_gear_tip_breathe: "Breathe/Smell air. Hear compressed sound? No odors?",
+                sim_gear_tip_secure_bcd: "Lift/tug BCD by handle. Is it secure?", 
+                sim_gear_tip_store: "Not diving now? Turn air off & purge reg.", 
+                sim_gear_tip_complete: "Secure gear and make sure it is stable and steady when stationary.",
+
+
+                sim_safety_title: 'Safety Stop Sim', sim_safety_intro_desc: 'This is a 3-minute guided exercise to train the *procedure* of a safety stop.',
+                
+                sim_safety_180: 'Drill starting. Neutralize buoyancy at 5m/15ft immediately.',
+                sim_safety_165: 'Check depth & timer. Signal "OK" to your buddy.',
+                sim_safety_150: 'Breathe deeply. Visualize stress leaving your body.',
+                sim_safety_135: 'Check trim. Are you horizontal? Keep fins steady.',
+                sim_safety_120: 'Monitor SPG (Air). How much do you have left?',
+                sim_safety_105: 'Look at your buddy. Are they comfortable?',
+                sim_safety_90: 'Gentle fin kicks only if needed. Maintain position.',
+                sim_safety_75: 'Look up. Check for surface disturbances or boats.',
+                sim_safety_60: 'Final minute. Orient yourself towards the ascent line.',
+                sim_safety_45: 'Scan 360 degrees. Clear the airspace above you.',
+                sim_safety_30: 'Listen for propellers. Look up. Prepare to ascend.',
+                sim_safety_15: 'Left hand high on deflator. Right hand up protecting head.',
+                sim_safety_0: 'Surface slowly. Inflate BCD immediately.',
+
+
+                sim_bwraf_title: 'Pre-Dive Safety Check (BWRAF)', sim_bwraf_intro_desc: 'This is a 30-second guided drill to practice the BWRAF pre-dive buddy check sequence.',
+                sim_bwraf_tip_start: 'Drill starting. Face your buddy.', sim_bwraf_tip_b: 'B - BCD: Check inflation/deflation & all straps.', sim_bwraf_tip_w: 'W - Weights: Check weight belt/pockets. Right-hand release?', sim_bwraf_tip_r: 'R - Releases: Check all clips & secure tank band.', sim_bwraf_tip_a: 'A - Air: Breathe from reg, watch gauge. Check alternate.', sim_bwraf_tip_f: 'F - Final Check: Mask, fins, dive computer ready?', sim_bwraf_tip_complete: 'Drill Complete! Ready to splash.',
+
+
+                calc_title: 'Nitrox Tools', calc_disclaimer_title: 'Disclaimer & Warning', calc_disclaimer_1: 'This tool is for **certified Enriched Air Nitrox (EANx) divers ONLY.** Improper use can lead to serious injury or death.', calc_disclaimer_2: 'This is NOT a recommended planning tool or a dive computer. Always use a dedicated dive computer for all dives and verify your mix with an analyzer.', calc_disclaimer_3: 'You dive at your own risk. PADI and most agencies recommend a maximum PPO2 of 1.4 for the dive and 1.6 for contingency/decompression. This calculator does not indicate safety limits and should be treated as a reference. This tool should not be used to plan your dives.',
+                calc_agree_btn: 'I Agree & Am Certified', calc_tab_calc: 'Calculators', calc_tab_limits: 'Limit Tables',
+                calc_mod_title: '1. Max Operating Depth (MOD)', calc_ead_title: '2. Equivalent Air Depth (EAD)', calc_limits_title: 'CNS Exposure Limits (NOAA)',
+                calc_mod_desc: 'Find the maximum depth for your mix.', calc_input_o2: 'Oxygen% (ex: 32)', calc_input_ppo2: 'Partial Pressure (ex: 1.4)', calc_output_mod: 'Max Operating Depth',
+                calc_ead_desc: 'Compare Nitrox nitrogen absorption to Air.', calc_input_depth: 'Planned Depth', calc_output_ead: 'Equivalent Air Depth',
+                calc_limits_desc: 'Reference for certified divers based on the NOAA exposure limits for a given PPO2.', calc_limits_disclaimer: 'Always verify these limits against your training agency standards and your personal dive computer. This is not a dive planner.', calc_limits_col_ppo2: 'PPO2', calc_limits_col_single: 'Single Dive Limit (min)', calc_limits_col_24hr: '24-Hour Limit (min)', calc_limits_col_cns: 'CNS % per Min',
+                planner_unit_m: 'Meters', planner_unit_ft: 'Feet',
+
+            
+
+
+                support_title: 'Support Our Mission', support_subtitle: 'Help fund vital ocean conservation.', support_mission_text: 'Your tax-deductible donations directly fund our mission: "Project Guardian" and its documentary series "Thirteen Moons"',
+                support_opt1_title: 'Fund The Science (Project Guardian) OceanGuardianLife.org', support_opt1_btn: 'Donate via Ecologistics, Inc.', support_opt1_href: 'https://charity.pledgeit.org/projectguardian', support_opt1_desc: 'Donations to Project Guardian support our on-the-ground conservation science. Our 501(c)(3) fiscal sponsor is Ecologistics, Inc.',
+                support_opt2_title: 'Fund The Storytelling (Thirteen Moons) OceanVoiceTV.com', support_opt2_btn: 'Donate via From the Heart', support_opt2_href: 'https://www.paypal.com/donate/?hosted_button_id=K3FB9M99HQXF6', support_opt2_desc: 'Donations to our media arm support our documentary filmmaking. Our 501(c)(3) fiscal sponsor is From the Heart Productions.',
+                support_opt_youtube_title: 'Watch & Learn (YouTube)', support_opt_youtube_btn: 'Subscribe to Ocean Voice TV', support_opt_youtube_desc: '',
+
+
+                why_title: 'Why Try Diving?', why_subtitle: 'Mind-Body Benefits', why_p1: "Diving is more than a sport; it's a form of active meditation. It requires relaxation techniques very similar to yoga, forcing you to focus on slow, controlled breathing, which automatically calms the nervous system.",
+                why_p2: 'The benefits are both physiological and psychological:', why_li1: 'Physiological Boost: Being immersed in the sea allows your skin (the body\'s largest organ) to absorb trace minerals. A bit of sun exposure on the boat adds a healthy dose of Vitamin D.', why_li2: 'Mental Clarity: Being at sea has psychologically-proven benefits against depression and stress. It is a true escape from electronic devices, allowing you to unplug and be present with the calming marine life.', why_li3: 'The Social Element: Add in some friendly social banter on the boat, and you have one of the most sought-after activities by those who have discovered it.', why_p3: 'No wonder it often seems like divers are part of a welcoming, international cult!',
+
+
+                basics_title: 'Diving Basics', basics_subtitle: 'Top 30 Safety & Technique Tips',
+                signals_title: 'Hand Signals', signals_subtitle: 'Visual Reference Guide'
+            }
+        };
+
+
+        const t = translations.en;
+
+
+        // --- DATA ---
+        const LANGUAGES = [
+            { code: 'ar', name: 'العربية', href: 'languages/ar-db.html' },
+            { code: 'cs', name: 'Čeština', href: 'languages/cs-db.html' },
+            { code: 'da', name: 'Dansk', href: 'languages/da-db.html' },
+            { code: 'de', name: 'Deutsch', href: 'languages/de-db.html' },
+            { code: 'el', name: 'Ελληνικά', href: 'languages/el-db.html' },
+            { code: 'en', name: 'English', href: 'index.html' },
+            { code: 'es', name: 'Español', href: 'languages/es-db.html' },
+            { code: 'et', name: 'Eesti', href: 'languages/et-db.html' },
+            { code: 'fi', name: 'Suomi', href: 'languages/fi-db.html' },
+            { code: 'fr', name: 'Français', href: 'languages/fr-db.html' },
+            { code: 'he', name: 'עברית', href: 'languages/he-db.html' },
+            { code: 'hi', name: 'हिन्दी', href: 'languages/hi-db.html' },
+            { code: 'hu', name: 'Magyar', href: 'languages/hu-db.html' },
+            { code: 'id', name: 'Bahasa Indonesia', href: 'languages/id-db.html' },
+            { code: 'it', name: 'Italiano', href: 'languages/it-db.html' },
+            { code: 'ja', name: '日本語', href: 'languages/ja-db.html' },
+            { code: 'ko', name: '한국어', href: 'languages/ko-db.html' },
+            { code: 'ms', name: 'Bahasa Melayu', href: 'languages/ms-db.html' },
+            { code: 'nl', name: 'Nederlands', href: 'languages/nl-db.html' },
+            { code: 'no', name: 'Norsk', href: 'languages/no-db.html' },
+            { code: 'pl', name: 'Polski', href: 'languages/pl-db.html' },
+            { code: 'pt', name: 'Português', href: 'languages/pt-db.html' },
+            { code: 'ru', name: 'Русский', href: 'languages/ru-db.html' },
+            { code: 'sk', name: 'Slovenčina', href: 'languages/sk-db.html' },
+            { code: 'sv', name: 'Svenska', href: 'languages/sv-db.html' },
+            { code: 'th', name: 'ไทย', href: 'languages/th-db.html' },
+            { code: 'tl', name: 'Tagalog', href: 'languages/tl-db.html' },
+            { code: 'tr', name: 'Türkçe', href: 'languages/tr-db.html' },
+            { code: 'vi', name: 'Tiếng Việt', href: 'languages/vi-db.html' },
+            { code: 'zh', name: '中文', href: 'languages/zh-db.html' }
+        ];
+
+
+        const GEAR_STEPS = [
+            { time: 110, text: t.sim_gear_tip_start }, 
+            { time: 100, text: t.sim_gear_tip_oring }, 
+            { time: 90, text: t.sim_gear_tip_bcd }, 
+            { time: 80, text: t.sim_gear_tip_tight },
+            { time: 70, text: t.sim_gear_tip_reg }, 
+            { time: 60, text: t.sim_gear_tip_lpi }, 
+            { time: 50, text: t.sim_gear_tip_secure }, 
+            { time: 40, text: t.sim_gear_tip_open }, 
+            { time: 30, text: t.sim_gear_tip_breathe },
+            { time: 20, text: t.sim_gear_tip_secure_bcd }, 
+            { time: 10, text: t.sim_gear_tip_store }, 
+            { time: 0, text: t.sim_gear_tip_complete }
+        ];
+
+
+        const SAFETY_STEPS = [
+            { time: 180, text: t.sim_safety_180 }, { time: 165, text: t.sim_safety_165 }, 
+            { time: 150, text: t.sim_safety_150 }, { time: 135, text: t.sim_safety_135 }, 
+            { time: 120, text: t.sim_safety_120 }, { time: 105, text: t.sim_safety_105 }, 
+            { time: 90, text: t.sim_safety_90 },   { time: 75, text: t.sim_safety_75 }, 
+            { time: 60, text: t.sim_safety_60 },   { time: 45, text: t.sim_safety_45 }, 
+            { time: 30, text: t.sim_safety_30 },   { time: 15, text: t.sim_safety_15 }, 
+            { time: 0, text: t.sim_safety_0 }
+        ];
+
+
+        const BWRAF_STEPS = [
+            { time: 30, text: t.sim_bwraf_tip_start }, { time: 25, text: t.sim_bwraf_tip_b }, { time: 20, text: t.sim_bwraf_tip_w }, { time: 15, text: t.sim_bwraf_tip_r },
+            { time: 10, text: t.sim_bwraf_tip_a }, { time: 5, text: t.sim_bwraf_tip_f }, { time: 0, text: t.sim_bwraf_tip_complete }
+        ];
+
+
+        const CNS_DATA = [
+            { p: 1.6, s: 45, d: 45, r: 2.222 }, { p: 1.5, s: 120, d: 180, r: 0.833 }, { p: 1.4, s: 150, d: 180, r: 0.667 }, { p: 1.3, s: 180, d: 210, r: 0.556 },
+            { p: 1.2, s: 210, d: 240, r: 0.476 }, { p: 1.1, s: 240, d: 270, r: 0.417 }, { p: 1.0, s: 300, d: 300, r: 0.333 }, { p: 0.9, s: 360, d: 360, r: 0.278 },
+            { p: 0.8, s: 450, d: 450, r: 0.222 }, { p: 0.7, s: 540, d: 540, r: 0.185 }, { p: 0.6, s: 720, d: 720, r: 0.139 }
+        ];
+
+
+        const CONTENT_DATA = {
+            basics: [
+                "Breathe continuously; never hold your breath.",
+                "Equalize early and often during descent.",
+                "Ascend slower than your smallest bubbles (max 18m/min).",
+                "Never exceed your training limits for depth.",
+                "Monitor air (SPG) and depth (computer) often.",
+                "Perform a pre-dive safety check (BWRAF) every dive.",
+                "Stay close to your buddy (buddy contact).",
+                "Establish positive buoyancy at the surface.",
+                "Release air from your BCD as you ascend (air expands).",
+                "Only inflate your BCD after you reach the surface.",
+                "Inform your guide *before* you are low on air (e.g., 70 bar).",
+                "Do not swim with your hands; maintain a horizontal trim.",
+                "Use slow, steady kicks from the hip.",
+                "Stop, Think, Act to regain buoyancy control.",
+                "In an uncontrolled ascent: Stop, Exhale, Dump Air.",
+                "Wait 18+ hours after multiple dives before flying.",
+                "In a lost buddy procedure, search for 1 minute, then ascend.",
+                "Stop all activity if you feel overexerted or out of breath.",
+                "Plan your dive, and dive your plan.",
+                "Always respect marine life; do not touch or chase.",
+                "Be aware of your environmental limits (currents, visibility).",
+                "Carry appropriate safety equipment (SMB, knife/tool).",
+                "Regularly practice emergency skills (mask clearing, etc.).",
+                "Stay well-hydrated before and after diving.",
+                "Listen to and follow all dive briefings.",
+                "Do not dive tired, ill, or hungover.",
+                "Check your O-rings and tank valve connection.",
+                "Know your buddy's gear (how to dump weights, etc.).",
+                "Do not equalize on ascent; air expands naturally.",
+                "Log your dives to track experience and air consumption."
+            ],
+            signals: [
+                { img: 'scuba-handsignals/ok.webp', text: 'OK / Are you OK?', desc: 'Thumb and forefinger touch to form a circle.' },
+                { img: 'scuba-handsignals/trouble-problem.webp', text: 'Problem / Something is wrong', desc: 'Hand tilting side-to-side continually (wobbling motion). Indicates an issue or uneasiness, followed by signaling or pointing to the problem' },
+                { img: 'scuba-handsignals/go-up.webp', text: 'Go Up / End Dive', desc: 'Fist with thumb pointing up.' },
+                { img: 'scuba-handsignals/go-down.webp', text: 'Go Down', desc: 'Fist with thumb pointing down.' },
+                { img: 'scuba-handsignals/stop.webp', text: 'Stop / Wait', desc: 'Flat hand held up, palm facing forward.' },
+                { img: 'scuba-handsignals/low-on-air.webp', text: 'Low on Air', desc: 'Fist held at chest level. Communicate this before you are out!' },
+                { img: 'scuba-handsignals/out-of-air.webp', text: 'Out of Air', desc: 'Slashing motion with a flat hand across the throat.' },
+                { img: 'scuba-handsignals/stay-with-buddy.webp', text: 'Stay Together / Buddy Up', desc: 'Two index fingers placed together side-by-side.' },
+                { img: 'scuba-handsignals/ear-problem.webp', text: 'Ear Problem', desc: 'Pointing to ear. Used if you cannot equalize pressure.' },
+                { img: 'scuba-handsignals/boat.webp', text: 'Boat', desc: 'Hands cupped together.' }
+            ]
+        };
+
+
+        const SPECIALTY_DATA = [
+            { title: "Deep Diver", tips: ["Watch Your Gauges: Check air, depth, and NDL frequently.", "Ascend Slowly: Max 18m/60ft per min. Always do a safety stop.", "Plan Your Dive: Stick strictly to depth/time limits.", "Manage Narcosis: Ascend slightly if you feel euphoric or anxious.", "Check Gear: Ensure regulators and gauges function perfectly.", "Monitor Buddy: Stay close; deep diving requires tight contact.", "Use Dive Computer: Rely on it for real-time tracking.", "Stay Warm: It gets significantly colder at depth (thermoclines).", "Conserve Energy: Move slowly to save air.", "Know Limits: Don't push training/comfort levels."] },
+            { title: "Underwater Navigation", tips: ["Account for Currents: Aim 'upstream' to compensate for drift.", "Trust Your Compass: Believe readings over instincts.", "Set Bezel: Align bezel before starting leg.", "Hold Level: Keep compass flat so the card rotates freely.", "Count Kick Cycles: Use consistent kicks to measure distance.", "Natural Landmarks: Use rocks/sand ripples as visual references.", "Straight Line: Focus on a distant object aligned with heading.", "Reciprocal Headings: Know how to calculate a 180° turn.", "Communicate: Agree on roles (one navigates, one counts).", "Relax: Anxiety affects navigation; stay calm."] },
+            { title: "Peak Performance Buoyancy", tips: ["Weight Check: Float at eye level with empty BCD at surface.", "Even Distribution: Balance weights for horizontal trim.", "Breath Control: Inhale to rise slightly, exhale to sink.", "Streamline: Secure hoses to reduce drag.", "Hover Practice: Practice being motionless mid-water.", "Relax: Muscle tension affects buoyancy.", "Visualize: Imagine yourself weightless.", "Tank Weight: Compensate for buoyancy shift as tank empties.", "BCD Fit: Ensure BCD doesn't shift during dive.", "Practice: Buoyancy degrades without use."] },
+            { title: "Enriched Air (Nitrox)", tips: ["Analyze Mix: Personally analyze O2 content every time.", "Set Computer: Adjust computer to specific O2% (e.g., 32%).", "Know MOD: Calculate Maximum Operating Depth.", "Label Tank: Mark tank with %, date, name, and MOD.", "Monitor O2 Exposure: Track CNS oxygen toxicity clock.", "Depth Limits: Never exceed MOD to avoid toxicity.", "Air Breaks: Consider breaks on repetitive dive series.", "Verify Log: Sign fill station log to confirm analysis.", "Understand PPO2: Know limits (1.4 active, 1.6 deco).", "Stay Current: Refresh formulas regularly."] },
+            { title: "Wreck Diver", tips: ["Survey First: Get an overview before exploring closer.", "Hazards: Watch for sharp metal and entanglement.", "Buoyancy: Avoid stirring up silt.", "Reel Use: Use a line if penetrating (requires training).", "Lights: Use a primary light to see details.", "Respect Life: Wrecks are artificial reefs.", "Air Rule: Turn back with ample reserve (Rule of Thirds).", "Entry/Exit: Identify and remember exit points.", "No Entanglement: Keep gear streamlined; carry a knife.", "Don't Touch: Protect yourself and the structure."] },
+            { title: "Night Diver", tips: ["Two Lights: Carry primary and backup lights.", "Light Signals: Review signals (e.g., circle for OK).", "Stay Close: Separation happens easily in the dark.", "Check Gauges: Monitor air/depth frequently.", "Reference Line: Use a line for descent/ascent.", "Move Slowly: Avoid bumping into things.", "Cover Light: Shield light when signaling buddy.", "Mark Entry: Ensure exit points are lit.", "Bioluminescence: Turn off lights briefly to observe glow.", "Relax: Enjoy the focused perspective."] },
+            { title: "Search & Recovery", tips: ["Define Area: Mark boundaries clearly.", "Choose Pattern: Use U-pattern or expanding square.", "Use Lines: Reels help maintain search spacing.", "Communicate: Have signals for 'found' or 'help'.", "Plan Lift: Calculate capacity before lifting.", "Secure Object: Attach lift bag firmly.", "Control Lift: Use dump valve; don't let it shoot up.", "Stay Clear: Don't be under a lifting object.", "Mark Spot: Use SMB if recovery is delayed.", "Teamwork: Coordinate roles clearly."] },
+            { title: "Drift Diver", tips: ["Go with Flow: Don't fight current; drift.", "Stay Grouped: Separation is a major risk.", "Streamline: Reduce drag to save air.", "Buoyancy: Avoid crashing into reef.", "Carry DSMB: Essential for signaling boat pickup.", "Negative Entry: Be ready to descend immediately.", "Watch Depth: Currents can push you up/down.", "Reef Hooks: Use only where permitted/appropriate.", "Boat Pickup: Follow safe pickup procedures.", "Enjoy: Relax and fly underwater."] },
+            { title: "Boat Diver", tips: ["Briefings: Listen to captain/DM safety talks.", "Stow Gear: Keep deck clear of tripping hazards.", "Entry/Exit: Know specific boat procedures.", "Seasickness: Take meds early if needed.", "Hydrate: Sun and wind dehydrate quickly.", "Sun Protection: Use reef-safe sunscreen.", "Be Ready: Gear up when requested.", "Tag In/Out: Ensure you are accounted for.", "Safety Stop: Use the hang bar/line.", "Tip Crew: Show appreciation for the staff."] },
+            { title: "Digital Imaging", tips: ["Buoyancy First: Don't damage reef for a photo.", "Get Close: Reduce water column for clarity.", "Shoot Up: Angle upwards for better light.", "Use Light: Strobes restore color lost at depth.", "Patience: Let marine life approach you.", "Check Settings: Adjust White Balance/ISO.", "Review: Check shots periodically.", "Respect: Don't harass life for a shot.", "Batteries: Ensure full charge + spare.", "Maintenance: Rinse housing thoroughly."] },
+            { title: "Fish ID", tips: ["Behavior: Note swimming/eating habits.", "Shapes: Disc, fusiform, or eel-like?", "Colors: Look for stripes, spots, patterns.", "Habitat: Sand, coral, or open water?", "Use Slate: Sketch details immediately.", "Consult Guides: Check books after dive.", "Families First: Identify family (e.g., Butterflyfish).", "Patience: Move slowly.", "Photos: Take shots for ID later.", "Share: Discuss findings with group."] },
+            { title: "Naturalist", tips: ["Look Small: Focus on macro life/details.", "Interactions: Watch for symbiosis/predation.", "Plants: Identify algae and marine plants.", "Invertebrates: Note sponges, corals, crustaceans.", "Move Slow: Speed hides life.", "Respect: Observe without impacting.", "Food Webs: Understand who eats whom.", "Zones: Explore different depth habitats.", "Magnify: Use a glass for tiny details.", "Log: Record observations."] },
+            { title: "DSMB Deployment", tips: ["Practice: Rehearse on land first.", "Check Line: Ensure no tangles.", "Add Air Slow: Don't let it shoot you up.", "Maintain Depth: Control buoyancy while deploying.", "Look Up: Check for boats/obstructions.", "Tension: Keep line taut on ascent.", "Reel In: Wind reel to avoid slack.", "Safety Stop: Deploy from 5m/15ft.", "Secure Gear: Don't drop the reel.", "Signal: Use to warn boat of location."] },
+            { title: "Dry Suit", tips: ["Seals: Check neck/wrist seals for fit.", "Undergarments: Layer for temperature.", "Add Air: Prevent squeeze on descent.", "Vent Air: Lift arm to vent on ascent.", "Buoyancy Check: Do it with undergarments.", "Feet: Keep lower than head to prevent inversion.", "BCD Use: Use BCD for surface, suit for depth.", "Zipper: Keep clean and lubricated.", "Rolls: Practice recovery from inversion.", "Maintenance: Rinse and dry open."] },
+            { title: "Sidemount", tips: ["Streamline: Route hoses neatly.", "Trim Weights: Adjust for side-tank balance.", "Tank Bungees: Adjust as tanks float up.", "Gas Mgmt: Switch regs to drain evenly.", "Entry/Exit: Learn specific techniques.", "Flexibility: Enjoy increased range of motion.", "Redundancy: Two independent gas sources.", "Config: Spend time fitting harness.", "Don/Doff: Practice in-water tank removal.", "Balance: Drain tanks evenly."] },
+            { title: "DPV (Scooter)", tips: ["Battery: Fully charge and seal.", "Tow Leash: Use to reduce arm fatigue.", "Equalize: Ascents/descents are faster.", "Watch Buddy: Match speeds to stay together.", "Obstacles: Plan turns ahead.", "Depth: Watch gauge; depth changes fast.", "Prop Safety: Keep hair/gear away.", "Turns: Use proper technique to avoid spin.", "Ascent: Use DPV for horizontal mostly.", "Maintenance: Rinse and seal carefully."] },
+            { title: "Altitude Diver", tips: ["Adjust Tables: Use altitude modes/tables.", "Acclimatize: Wait 12+ hours at altitude.", "Check Gauges: Depth reads differently.", "Slower Ascent: Max 9m/min.", "Safety Stop: Do at theoretical depth.", "Hydrate: Altitude increases dehydration.", "Sun: UV is stronger.", "Oxygen: Lower O2 at surface affects exertion.", "No-Fly: Extend surface intervals.", "Capillary Gauges: Understand how they read."] }
+        ];
+
+
+        // --- CONTEXTS ---
+        const MessageContext = createContext();
+        const MessageProvider = ({ children }) => {
+            const [message, setMessage] = useState(null);
+            const showMessage = (text, type = 'info') => { setMessage({ text, type }); setTimeout(() => setMessage(null), 3000); };
+            return ( <MessageContext.Provider value={{ showMessage }}> {children} {message && ReactDOM.createPortal(<div className={`message-box ${message.type} show`}>{message.text}</div>, document.getElementById('message-container'))} </MessageContext.Provider> );
+        };
+        const useMessage = () => useContext(MessageContext);
+
+
+        // --- BILLING LOGIC ---
+        const BillingContext = createContext();
+        const BillingProvider = ({ children }) => {
+            const [isPro, setIsPro] = useState(() => localStorage.getItem('db_pro_status') === 'true');
+            const [isLoading, setIsLoading] = useState(false);
+            const [showProModal, setShowProModal] = useState(false);
+            const [isProcessing, setIsProcessing] = useState(false);
+            const { showMessage } = useMessage();
+
+
+            useEffect(() => {
+                const params = new URLSearchParams(window.location.search);
+                if (params.get('status') === 'pro_unlocked') {
+                    setIsPro(true);
+                    localStorage.setItem('db_pro_status', 'true');
+                    window.history.replaceState({}, document.title, window.location.pathname);
+                }
+                window.handleProStatus = (status) => {
+                    const unlocked = (status === 'true');
+                    
+                    // GOOGLE ADS: Only fire conversion if this is a NEW unlock
+                    const wasAlreadyPro = localStorage.getItem('db_pro_status') === 'true';
+                    if (unlocked && !wasAlreadyPro && typeof gtag === 'function') {
+                        gtag('event', 'conversion', {
+                            'send_to': 'AW-1012423950/PAYVCOyRntAbEI664eID',
+                            'transaction_id': '' 
+                        });
+                        gtag('event', 'conversion', {
+                            'send_to': 'AW-17799039013/wAqNCJ-pqtAbEKWQn6dC',
+                            'value': 1.0,
+                            'currency': 'THB',
+                            'transaction_id': ''
+                        });
+                    }
+
+                    setIsPro(unlocked);
+                    localStorage.setItem('db_pro_status', unlocked ? 'true' : 'false');
+                    setIsLoading(false);
+                };
+                if (window.checkProStatus) window.checkProStatus();
+                else { const i = setInterval(() => { if(window.checkProStatus) { window.checkProStatus(); clearInterval(i); } }, 500); }
+            }, []);
+
+
+            const purchaseItem = () => {
+                setIsProcessing(true);
+                if (window.initiateProPurchase) { window.initiateProPurchase(); setTimeout(() => setIsProcessing(false), 5000); } 
+                else { showMessage("Billing unavailable.", "error"); setIsProcessing(false); }
+            };
+            const restorePurchases = () => { showMessage("Checking...", "info"); if(window.checkProStatus) window.checkProStatus(); };
+            const promptProModal = () => setShowProModal(true);
+            const products = { monthly: { price: '$2.99' }, lifetime: { price: '$29.99' } };
+
+
+            return ( <BillingContext.Provider value={{ isPro, showProModal, setShowProModal, promptProModal, purchaseItem, restorePurchases, products, isLoading, isProcessing }}> {children} </BillingContext.Provider> );
+        };
+        const useBilling = () => useContext(BillingContext);
+
+
+        // --- ICONS ---
+        const HeartIcon = (p) => (<svg {...p} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>);
+        const ClockIcon = (p) => (<svg {...p} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>);
+        const CalculatorIcon = (p) => (<svg {...p} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008Zm0 3h.008v.008H8.25v-.008Zm0 3h.008v.008H8.25v-.008Zm3-6h.008v.008H11.25v-.008Zm0 3h.008v.008H11.25v-.008Zm3-6h.008v.008H14.25v-.008Zm0 3h.008v.008H14.25v-.008ZM6 20.25h12A2.25 2.25 0 0 0 20.25 18V6A2.25 2.25 0 0 0 18 3.75H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25Z" /></svg>);
+        const BookIcon = (p) => (<svg {...p} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg>);
+        const GiftIcon = (p) => (<svg {...p} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M21 11.25v8.25a2.25 2.25 0 0 1-2.25 2.25H5.25a2.25 2.25 0 0 1-2.25-2.25v-8.25M12 4.875A3.375 3.375 0 0 0 8.625 8.25H15A3.375 3.375 0 0 0 12 4.875Z" /><path strokeLinecap="round" strokeLinejoin="round" d="M12 4.875A3.375 3.375 0 0 1 15.375 8.25H8.625A3.375 3.375 0 0 1 12 4.875Z" /></svg>);
+        const GlobeIcon = () => (<svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S12 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S12 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" /></svg>);
+        const ArrowLeftIcon = () => (<svg className="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" /></svg>);
+        const XMarkIcon = () => (<svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" /></svg>);
+        const LockIcon = (p) => (<svg {...p} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 0 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" /></svg>);
+        const StarIcon = () => (<svg className="w-5 h-5 text-cyan-400 mr-3" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.563.563 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.563.563 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/></svg>);
+        const ClockCountdownIcon = () => (<svg className="w-12 h-12 text-cyan-400" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /><path strokeLinecap="round" strokeLinejoin="round" d="M19.5 12c0-4.036-3.264-7.3-7.3-7.3S4.9 7.964 4.9 12s3.264 7.3 7.3 7.3 7.3-3.264 7.3-7.3Z" /><path strokeLinecap="round" strokeLinejoin="round" d="m12 10.5 -1.5 1.5 1.5 1.5" /></svg>);
+        const QuestionMarkIcon = () => (<svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg>);
+        const DiverIcon = () => (<svg className="w-16 h-16 text-cyan-400 mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>);
+        const YoutubeIcon = () => (<svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>);
+        const LightBulbIcon = (p) => (<svg {...p} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.45l.328-.18a5.25 5.25 0 0 0 2.25-4.573C16.078 5.017 14.315 3 12 3s-4.078 1.983-4.078 4.547c0 1.686.881 3.296 2.25 4.574l.328.18c.464.256.997.45 1.5.45ZM3 12h1.5m16.5 0h-1.5m-15 6h18m-18-3h18" /></svg>);
+
+
+        // --- COMPONENTS ---
+        const ProModal = () => {
+            const { showProModal, setShowProModal, purchaseItem, restorePurchases, isProcessing } = useBilling();
+            const [showLang, setShowLang] = useState(false);
+            if (!showProModal) return null;
+            return (
+                <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-80 backdrop-blur-sm" onClick={() => !isProcessing && setShowProModal(false)}>
+                    <div className="bg-gray-800 w-full max-w-sm p-6 rounded-2xl shadow-2xl border border-gray-700 relative" onClick={e => e.stopPropagation()}>
+                        <div className="absolute top-4 left-4 z-50">
+                            <button onClick={() => setShowLang(!showLang)} className="text-gray-400 hover:text-white p-1"><GlobeIcon /></button>
+                            {showLang && (
+                                <div className="absolute top-8 left-0 bg-gray-900 border border-gray-700 rounded shadow-xl p-2 flex flex-col gap-2 z-50 w-40 text-left h-48 overflow-y-auto" onMouseLeave={() => setShowLang(false)}>
+                                    {LANGUAGES.map(lang => (
+                                        <a key={lang.code} href={lang.href} className="text-sm text-gray-300 hover:text-white block p-1">{lang.name}</a>
+                                    ))}
+                                </div>
+                            )}
+                        </div>
+                        <div className="flex justify-between items-center mb-4 pl-10">
+                            <h2 className="text-2xl font-bold text-white">{t.pro_title}</h2>
+                            <button onClick={() => !isProcessing && setShowProModal(false)} disabled={isProcessing} className="text-gray-400 hover:text-white"><XMarkIcon /></button>
+                        </div>
+                        <p className="text-gray-300 mb-6">{t.pro_subtitle}</p>
+                        <ul className="space-y-3 mb-8 text-left text-sm text-gray-200">
+                            <li className="flex items-center"><StarIcon /> {t.pro_feat_1}</li>
+                            <li className="flex items-center"><StarIcon /> {t.pro_feat_2}</li>
+                            <li className="flex items-center"><StarIcon /> {t.pro_feat_3}</li>
+                            <li className="flex items-center"><StarIcon /> {t.pro_feat_4}</li>
+                        </ul>
+                        <button disabled={isProcessing} className={`${isProcessing ? 'bg-cyan-700' : 'bg-cyan-600 hover:bg-cyan-500'} w-full font-bold py-3 px-5 rounded-lg shadow-lg text-white mb-4`} onClick={purchaseItem}>
+                            {t.pro_lifetime_btn} <span className="block text-xs opacity-80">{t.pro_lifetime_desc}</span>
+                        </button>
+                        <div className="text-center">
+                            <button disabled={isProcessing} onClick={restorePurchases} className="text-xs text-gray-400 hover:text-white mx-3">{t.pro_restore_btn}</button>
+                            <button onClick={() => !isProcessing && setShowProModal(false)} disabled={isProcessing} className="text-xs text-gray-400 hover:text-white mx-3">{t.pro_close_btn}</button>
+                        </div>
+                    </div>
+                </div>
+            );
+        };
+
+
+        const ExhaleGraph = ({ history }) => {
+            if (!history || history.length === 0) return null;
+            const maxVal = Math.max(...history, 10);
+            const widthPercent = 100 / 10;
+            return (
+                <div className="w-full bg-gray-800 rounded-lg p-3 mt-4 shadow-inner">
+                    <div className="text-xs text-gray-400 mb-2 text-left">History (10)</div>
+                    <div className="flex items-end justify-between h-[60px] space-x-1">
+                        {history.map((val, i) => (
+                            <div key={i} className="bg-cyan-500 rounded-t-sm graph-bar relative group" style={{ width: `${widthPercent}%`, height: `${(val / maxVal) * 100}%` }}>
+                                <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-[10px] px-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">{val.toFixed(1)}s</div>
+                            </div>
+                        ))}
+                        {[...Array(10 - history.length)].map((_, i) => <div key={`empty-${i}`} className="bg-gray-700/30 rounded-t-sm h-full" style={{ width: `${widthPercent}%` }}></div>)}
+                    </div>
+                </div>
+            );
+        };
+
+
+        const BreathTrainer = ({ onShowBasics, onShowWhy, onShowSignals, onShowSupport }) => {
+            const { isPro, promptProModal } = useBilling();
+            const [screen, setScreen] = useState('instructions');
+            const [guideText, setGuideText] = useState('');
+            const [countdown, setCountdown] = useState(null);
+            const [visualScale, setVisualScale] = useState(0.1);
+            const [visualColor, setVisualColor] = useState('bg-cyan-700');
+            const [exhaleDisabled, setExhaleDisabled] = useState(true);
+            const [exhaleText, setExhaleText] = useState(t.breath_exhale_btn);
+            const [isExhaling, setIsExhaling] = useState(false);
+            const [cycleCount, setCycleCount] = useState(0);
+            const [exhaleStartTime, setExhaleStartTime] = useState(null);
+            const [currentExhaleDuration, setCurrentExhaleDuration] = useState(0);
+            const [bestExhaleDuration, setBestExhaleDuration] = useState(0);
+            const [history, setHistory] = useState([]);
+            const exhaleIntervalRef = useRef(null);
+            const timerRefs = useRef([]);
+
+
+            const resetApp = () => { setScreen('instructions'); setIsExhaling(false); setExhaleStartTime(null); setCycleCount(0); setCurrentExhaleDuration(0); clearInterval(exhaleIntervalRef.current); };
+
+
+            useEffect(() => { return () => { timerRefs.current.forEach(clearTimeout); clearInterval(exhaleIntervalRef.current); }; }, []);
+
+
+            useEffect(() => {
+                timerRefs.current.forEach(clearTimeout); timerRefs.current = [];
+                if (screen === 'trainer' && !isExhaling) {
+                    setGuideText(t.breath_inhale); setCountdown(3); setVisualScale(1); setVisualColor('bg-cyan-700'); setExhaleDisabled(true); setExhaleText(t.breath_exhale_btn); setCurrentExhaleDuration(0);
+                    timerRefs.current.push(setTimeout(() => setCountdown(2), 1000));
+                    timerRefs.current.push(setTimeout(() => setCountdown(1), 2000));
+                    timerRefs.current.push(setTimeout(() => { setCountdown(null); setGuideText(t.breath_hold); setVisualColor('bg-yellow-500'); timerRefs.current.push(setTimeout(() => { setGuideText('...'); setVisualColor('bg-emerald-600'); setExhaleDisabled(false); }, 1000)); }, 3000));
+                }
+            }, [screen, cycleCount, isExhaling]);
+
+
+            useEffect(() => {
+                if (isExhaling) {
+                    if (!exhaleStartTime) { setExhaleStartTime(Date.now()); }
+                    exhaleIntervalRef.current = setInterval(() => { if (exhaleStartTime) { setCurrentExhaleDuration(((Date.now() - exhaleStartTime) / 1000)); } }, 100);
+                } else {
+                    clearInterval(exhaleIntervalRef.current);
+                    if (exhaleStartTime) {
+                        const duration = (Date.now() - exhaleStartTime) / 1000;
+                        setCurrentExhaleDuration(duration);
+                        if (duration > bestExhaleDuration) { setBestExhaleDuration(duration); }
+                        setHistory(prev => [...prev.slice(-9), duration]);
+                    }
+                    setExhaleStartTime(null);
+                }
+                return () => clearInterval(exhaleIntervalRef.current);
+            }, [isExhaling, bestExhaleDuration, exhaleStartTime]);
+
+
+            const handleExhaleStart = (e) => {
+                e.preventDefault();
+                if (!isPro && cycleCount >= FREE_BREATH_CYCLES) { promptProModal(); return; }
+                if (exhaleDisabled || isExhaling) return;
+                setIsExhaling(true); setGuideText(t.breath_exhale); setVisualScale(0.1); setExhaleText(t.breath_exhaling_btn);
+            };
+            const handleExhaleEnd = (e) => { e.preventDefault(); if (!isExhaling) return; setIsExhaling(false); setCycleCount(c => c + 1); };
+
+
+            if (screen === 'trainer') {
+                const isLocked = !isPro && cycleCount >= FREE_BREATH_CYCLES;
+                return (
+                    <div className="w-full max-w-sm mx-auto text-center flex flex-col h-full justify-between p-4 fade-in">
+                        <div />
+                        <div>
+                            <div className={`w-56 h-56 md:w-72 md:h-72 mx-auto rounded-full flex flex-col items-center justify-center shadow-2xl transition-all duration-1000 ease-out ${visualColor}`} style={{ transform: `scale(${visualScale})` }}>
+                                <span className="text-5xl font-extrabold text-white">{isExhaling ? currentExhaleDuration.toFixed(1) : guideText}</span>
+                                {countdown !== null && !isExhaling && (<span className="text-4xl font-bold text-white opacity-75 mt-2">{countdown}</span>)}
+                            </div>
+                            <button className={`no-select w-full max-w-xs mx-auto text-white text-2xl font-bold py-12 px-8 rounded-full shadow-lg transition-all duration-200 mt-8 ${exhaleDisabled ? 'bg-gray-700 cursor-not-allowed' : isLocked ? 'bg-yellow-500 hover:bg-yellow-400' : 'bg-cyan-500 hover:bg-cyan-400'}`} disabled={exhaleDisabled} onMouseDown={handleExhaleStart} onMouseUp={handleExhaleEnd} onMouseLeave={handleExhaleEnd} onTouchStart={handleExhaleStart} onTouchEnd={handleExhaleEnd}>
+                                {isLocked ? t.breath_unlock_features : exhaleText}
+                            </button>
+                        </div>
+                        <div>
+                            <ExhaleGraph history={history} />
+                            <div className="mt-6 flex justify-center items-center space-x-6">
+                                <div><span className="text-gray-400">{t.breath_cycles}</span><span className="text-white ml-1">{cycleCount}</span></div>
+                                <div><span className="text-gray-400">{t.breath_timer_best}</span><span className="text-white ml-1">{bestExhaleDuration.toFixed(1)}s</span></div>
+                            </div>
+                            <button onClick={() => { setScreen('instructions'); setCycleCount(0); setHistory([]); }} className="mt-4 text-cyan-400 font-medium">{t.back_to_menu}</button>
+                        </div>
+                    </div>
+                );
+            }
+            return (
+                <div className="w-full max-w-sm mx-auto text-center p-4 pb-24 overflow-y-auto h-full fade-in">
+                    <h1 className="text-4xl font-extrabold text-white mb-2">{t.breath_title}</h1>
+                    <h2 className="text-xl font-semibold text-cyan-300 mb-6">{t.breath_subtitle}</h2>
+                    <div className="text-left text-base text-gray-200 space-y-3 bg-gray-800 p-5 rounded-2xl shadow-lg mt-4">
+                        <p>{t.breath_intro_1}</p> <p className="font-bold">{t.breath_intro_2}</p>
+                        <ul className="list-disc list-inside pl-2 space-y-1"><li>{t.breath_inhale} (3s)</li><li>{t.breath_hold} (1s)</li><li>{t.breath_exhale} (Max)</li></ul>
+                        <p><strong>{t.breath_technique}</strong></p>
+                        <p>{t.breath_technique_2}</p>
+                        <p className="font-bold text-yellow-400 text-sm">{t.breath_technique_3}</p>
+                    </div>
+                    <button onClick={() => setScreen('trainer')} className="w-full bg-cyan-500 hover:bg-cyan-400 text-gray-900 text-xl font-bold py-4 px-8 rounded-full shadow-lg transition-all duration-200 transform hover:scale-105 mt-6">{t.breath_begin}</button>
+                    <div className="grid grid-cols-2 gap-3 mt-4">
+                        <button onClick={onShowBasics} className="force-text-white w-full bg-gray-700 hover:bg-gray-600 text-white text-base font-medium py-3 px-4 rounded-xl shadow-md border-b-4 border-gray-800 active:border-b-0 active:translate-y-1">{t.breath_basics_btn}</button>
+                        <button onClick={onShowSignals} className="force-text-white w-full bg-gray-700 hover:bg-gray-600 text-white text-base font-medium py-3 px-4 rounded-xl shadow-md border-b-4 border-gray-800 active:border-b-0 active:translate-y-1">{t.breath_signals_btn}</button>
+                        <button onClick={onShowWhy} className="force-text-white w-full bg-gray-700 hover:bg-gray-600 text-white text-base font-medium py-3 px-4 rounded-xl shadow-md border-b-4 border-gray-800 active:border-b-0 active:translate-y-1">{t.breath_why_btn}</button>
+                        <button onClick={onShowSupport} className="force-text-white w-full bg-emerald-600 hover:bg-emerald-500 text-white text-base font-bold py-3 px-4 rounded-xl shadow-md border-b-4 border-emerald-800 active:border-b-0 active:translate-y-1">{t.breath_support_btn}</button>
+                    </div>
+                </div>
+            );
+        };
+
+
+        const DrillsScreen = () => {
+            const [currentDrill, setCurrentDrill] = useState(null);
+            const { isPro, promptProModal } = useBilling();
+            const onBack = () => setCurrentDrill(null);
+            if (!currentDrill) {
+                const handleDrillSelect = (drill) => { if (isPro) setCurrentDrill(drill); else promptProModal(); };
+                return (
+                    <div className="w-full max-w-sm mx-auto text-center p-4 flex flex-col justify-center items-center h-full fade-in">
+                        <div className="text-cyan-400"><ClockCountdownIcon /></div>
+                        <h1 className="text-3xl font-extrabold text-white mt-4 mb-2">{t.drills_title}</h1><p className="text-base text-gray-200 bg-gray-800 p-4 rounded-2xl shadow-lg mb-6">{t.drills_intro}</p>
+                        <div className="w-full space-y-3">
+                            <button onClick={() => handleDrillSelect('gear_setup')} className="force-text-white w-full relative bg-cyan-500 hover:bg-cyan-400 text-gray-900 text-lg font-bold py-3 px-6 rounded-xl shadow-lg transform hover:scale-105">{!isPro && <LockIcon className="absolute top-1/2 left-6 -translate-y-1/2 w-5 h-5 text-gray-800" />} {t.drills_select_gear_setup}</button>
+                            <button onClick={() => handleDrillSelect('bwraf')} className="force-text-white w-full relative bg-cyan-500 hover:bg-cyan-400 text-gray-900 text-lg font-bold py-3 px-6 rounded-xl shadow-lg transform hover:scale-105">{!isPro && <LockIcon className="absolute top-1/2 left-6 -translate-y-1/2 w-5 h-5 text-gray-800" />} {t.drills_select_bwraf}</button>
+                            <button onClick={() => handleDrillSelect('safety_stop')} className="force-text-white w-full relative bg-cyan-500 hover:bg-cyan-400 text-gray-900 text-lg font-bold py-3 px-6 rounded-xl shadow-lg transform hover:scale-105">{!isPro && <LockIcon className="absolute top-1/2 left-6 -translate-y-1/2 w-5 h-5 text-gray-800" />} {t.drills_select_safety_stop}</button>
+                        </div>
+                    </div>
+                );
+            }
+            const DrillRunner = ({ steps, title }) => {
+                const [running, setRunning] = useState(false);
+                const [timeLeft, setTimeLeft] = useState(steps[0].time);
+                const [tip, setTip] = useState(steps[0].text);
+                useEffect(() => { let i; if(running) { i = setInterval(() => { setTimeLeft(p => { if(p<=0){clearInterval(i); return 0;} const n=steps.find(s=>s.time===p-1); if(n) setTip(n.text); return p-1; }); }, 1000); } return () => clearInterval(i); }, [running]);
+                if(!running) return (<div className="w-full max-w-sm mx-auto text-center p-4 fade-in flex flex-col h-full justify-center"><h1 className="text-3xl font-bold text-white mb-4">{title}</h1><div className="text-left text-sm text-gray-200 bg-gray-800 p-4 rounded-lg mb-4 space-y-2"><p>{t.sim_disclaimer_1}</p><p>{t.sim_disclaimer_2}</p><p className="text-yellow-400 font-bold">{t.sim_disclaimer_3}</p></div><button onClick={() => setRunning(true)} className="w-full bg-yellow-500 text-black font-bold py-3 rounded-xl shadow-lg">{t.sim_agree_btn}</button><button onClick={onBack} className="mt-4 text-cyan-400">{t.back_to_menu}</button></div>);
+                return (<div className="w-full max-w-sm mx-auto text-center p-4 h-full flex flex-col justify-between fade-in"><div><h1 className="text-2xl font-bold text-cyan-300 mt-4">{title}</h1><div className="text-8xl font-extrabold text-white my-8">{timeLeft}</div><div className="text-xl text-gray-200 bg-gray-800 p-6 rounded-2xl shadow-lg min-h-[120px] flex items-center justify-center">{tip}</div></div><button onClick={onBack} className="w-full bg-rose-600 hover:bg-rose-500 text-white font-bold py-3 rounded-xl shadow-lg mb-4">{t.sim_stop_btn}</button></div>);
+            };
+            if(currentDrill === 'gear_setup') return <DrillRunner steps={GEAR_STEPS} title={t.sim_gear_title} />;
+            if(currentDrill === 'bwraf') return <DrillRunner steps={BWRAF_STEPS} title={t.sim_bwraf_title} />;
+            if(currentDrill === 'safety_stop') return <DrillRunner steps={SAFETY_STEPS} title={t.sim_safety_title} />;
+        };
+
+
+        const SpecialtyTipsScreen = ({ onBack }) => {
+            const [selectedTopic, setSelectedTopic] = useState(null);
+            const { isPro, promptProModal } = useBilling();
+
+
+            if (selectedTopic) {
+                return (
+                    <div className="w-full max-w-sm mx-auto text-left p-4 pb-24 overflow-y-auto h-full fade-in">
+                        <button onClick={() => setSelectedTopic(null)} className="flex items-center text-cyan-400 hover:text-cyan-300 text-base font-medium mb-4">
+                            <ArrowLeftIcon /> {t.back_to_menu || 'Back'}
+                        </button>
+                        <h1 className="text-2xl font-extrabold text-white mb-1">{selectedTopic.title}</h1>
+                        <div className="w-16 h-1 bg-cyan-500 rounded mb-6"></div>
+                        <ul className="space-y-4">
+                            {selectedTopic.tips.map((tip, i) => (
+                                <li key={i} className="bg-gray-800 p-4 rounded-xl text-sm text-gray-200 shadow-md border border-gray-700 flex items-start">
+                                    <span className="flex-shrink-0 w-6 h-6 bg-cyan-900 text-cyan-300 rounded-full flex items-center justify-center text-xs font-bold mr-3 mt-0.5">{i+1}</span>
+                                    <span className="leading-relaxed">{tip}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                );
+            }
+
+
+            return (
+                <div className="w-full max-w-sm mx-auto text-center p-4 pb-24 overflow-y-auto h-full fade-in">
+                     <h1 className="text-3xl font-extrabold text-white mb-2">{t.tips_title}</h1>
+                     <p className="text-gray-400 mb-6 text-sm bg-gray-800 p-3 rounded-xl">{t.tips_intro}</p>
+                     <div className="space-y-2">
+                        {SPECIALTY_DATA.map((item, i) => (
+                            <button key={i} onClick={() => isPro ? setSelectedTopic(item) : promptProModal()} className="w-full text-left bg-gray-800 hover:bg-gray-700 p-4 rounded-xl shadow-md border border-gray-700 flex justify-between items-center group transition-all active:scale-95 relative overflow-hidden">
+                                <span className="font-bold text-gray-200 group-hover:text-white text-sm">{item.title}</span>
+                                <span className="text-cyan-500 bg-gray-900 rounded-full w-6 h-6 flex items-center justify-center text-xs">→</span>
+                                {!isPro && <div className="absolute inset-0 bg-black/40 flex items-center justify-center"><LockIcon className="w-6 h-6 text-yellow-400" /></div>}
+                            </button>
+                        ))}
+                     </div>
+                </div>
+            );
+        };
+
+
+        const NitroxUtils = {
+            getATA: (depth, units) => {
+                const depthMeters = (units === 'metric') ? parseFloat(depth) : (parseFloat(depth) / 3.28084);
+                if (isNaN(depthMeters) || depthMeters < 0) return 1;
+                return (depthMeters / 10) + 1;
+            },
+        };
+
+
+        const CalculatorScreen = () => {
+            const { isPro, promptProModal } = useBilling();
+            const [screen, setScreen] = useState('disclaimer');
+            const [activeTab, setActiveTab] = useState('calc');
+            const [units, setUnits] = useState('metric');
+            const [modO2, setModO2] = useState('32');
+            const [modPPO2, setModPPO2] = useState('1.4');
+            const [eadDepth, setEadDepth] = useState('30');
+            const [eadO2, setEadO2] = useState('32');
+
+
+            const modResult = useMemo(() => {
+                const o2 = parseFloat(modO2) / 100;
+                const ppo2 = parseFloat(modPPO2);
+                if (isNaN(o2) || o2 <= 0 || o2 > 1 || isNaN(ppo2) || ppo2 <= 0) return 0;
+                const ata = ppo2 / o2;
+                if (ata < 1) return 0;
+                const depthMeters = (ata - 1) * 10;
+                return (units === 'metric') ? depthMeters : (depthMeters * 3.28084);
+            }, [modO2, modPPO2, units]);
+
+
+            const eadResult = useMemo(() => {
+                const d = parseFloat(eadDepth);
+                const o2 = parseFloat(eadO2) / 100;
+                if (isNaN(d) || d < 0 || isNaN(o2) || o2 < 0.21 || o2 > 1) return 0;
+                const n2 = 1 - o2;
+                if (units === 'metric') return ((d + 10) * (n2 / 0.79)) - 10;
+                else return ((d + 33) * (n2 / 0.79)) - 33;
+            }, [eadDepth, eadO2, units]);
+
+
+            if(screen === 'disclaimer') return (<div className="w-full max-w-sm mx-auto text-center p-4 flex flex-col justify-center h-full fade-in"><h1 className="text-2xl font-bold text-yellow-400 mb-4">{t.calc_disclaimer_title}</h1><div className="text-left text-sm text-gray-200 space-y-3 bg-gray-800 p-5 rounded-2xl shadow-lg"><p><span dangerouslySetInnerHTML={{__html: t.calc_disclaimer_1}}/></p><p>{t.calc_disclaimer_2}</p><p>{t.calc_disclaimer_3}</p></div><button onClick={() => isPro ? setScreen('calc') : promptProModal()} className={`w-full font-bold py-3 rounded-xl shadow-lg mt-6 ${isPro ? 'bg-yellow-500 text-black' : 'bg-cyan-500 text-black'}`}>{isPro ? t.calc_agree_btn : t.pro_title}</button></div>);
+
+
+            return (
+                <div className="w-full max-w-sm mx-auto text-left p-4 pb-24 overflow-y-auto h-full fade-in">
+                    <h1 className="text-3xl font-bold text-white mb-4 text-center">{t.calc_title}</h1>
+                    <div className="flex justify-center mb-4">
+                        <button onClick={() => setUnits('metric')} className={`py-2 px-6 rounded-l-full font-semibold ${units === 'metric' ? 'bg-cyan-500 text-gray-900' : 'bg-gray-700 text-white'}`}>{t.planner_unit_m}</button>
+                        <button onClick={() => setUnits('imperial')} className={`py-2 px-6 rounded-r-full font-semibold ${units === 'imperial' ? 'bg-cyan-500 text-gray-900' : 'bg-gray-700 text-white'}`}>{t.planner_unit_ft}</button>
+                    </div>
+                    <div className="flex w-full mt-4 mb-6">
+                        <button onClick={() => setActiveTab('calc')} className={`w-1/2 py-2 font-bold rounded-t-lg ${activeTab==='calc' ? 'bg-gray-800 text-cyan-300' : 'bg-gray-900 text-gray-500'}`}>{t.calc_tab_calc}</button>
+                        <button onClick={() => setActiveTab('limits')} className={`w-1/2 py-2 font-bold rounded-t-lg ${activeTab==='limits' ? 'bg-gray-800 text-cyan-300' : 'bg-gray-900 text-gray-500'}`}>{t.calc_tab_limits}</button>
+                    </div>
+                    {activeTab === 'calc' && (
+                        <div className="bg-gray-800 p-5 rounded-b-2xl shadow-lg space-y-6">
+                            <div>
+                                <h2 className="text-xl font-bold text-cyan-300 mb-1">{t.calc_mod_title}</h2>
+                                <p className="text-sm text-gray-400 mb-2">{t.calc_mod_desc}</p>
+                                <label className="block text-xs font-medium text-gray-400 mb-1">{t.calc_input_o2} (21-100%)</label>
+                                <div className="flex items-center space-x-4 mb-2">
+                                    <input type="range" min="21" max="100" value={modO2} onChange={(e) => setModO2(e.target.value)} className="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-cyan-500"/>
+                                    <input type="number" min="21" max="100" value={modO2} onChange={(e) => setModO2(e.target.value)} className="w-16 bg-gray-700 text-white p-2 rounded-lg text-center font-bold"/>
+                                </div>
+                                <label className="block text-xs font-medium text-gray-400 mb-1">{t.calc_input_ppo2} (1.2 - 1.6)</label>
+                                <div className="flex items-center space-x-4 mb-2">
+                                    <input type="range" min="1.2" max="1.6" step="0.1" value={modPPO2} onChange={(e) => setModPPO2(e.target.value)} className="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-cyan-500"/>
+                                    <input type="number" min="1.2" max="1.6" step="0.1" value={modPPO2} onChange={(e) => setModPPO2(e.target.value)} className="w-16 bg-gray-700 text-white p-2 rounded-lg text-center font-bold"/>
+                                </div>
+                                <div className="bg-gray-900 p-3 rounded-lg text-center"><div className="text-4xl font-extrabold text-white">{modResult.toFixed(1)}<span className="text-xl text-gray-400 ml-2">{units === 'metric' ? 'm' : 'ft'}</span></div></div>
+                            </div>
+                            <hr className="border-gray-700" />
+                            <div>
+                                <h2 className="text-xl font-bold text-cyan-300 mb-1">{t.calc_ead_title}</h2>
+                                <p className="text-sm text-gray-400 mb-2">{t.calc_ead_desc}</p>
+                                <label className="block text-xs font-medium text-gray-400 mb-1">{t.calc_input_depth} ({units === 'metric' ? 'm' : 'ft'})</label>
+                                <input type="number" value={eadDepth} onChange={(e) => setEadDepth(e.target.value)} className="w-full bg-gray-700 text-white p-2 rounded-lg text-left font-bold mb-2"/>
+                                <label className="block text-xs font-medium text-gray-400 mb-1">{t.calc_input_o2} (21-100%)</label>
+                                <div className="flex items-center space-x-4 mb-2">
+                                    <input type="range" min="21" max="50" value={eadO2} onChange={(e) => setEadO2(e.target.value)} className="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-cyan-500"/>
+                                    <input type="number" min="21" max="100" value={eadO2} onChange={(e) => setEadO2(e.target.value)} className="w-16 bg-gray-700 text-white p-2 rounded-lg text-center font-bold"/>
+                                </div>
+                                <div className="bg-gray-900 p-3 rounded-lg text-center">
+                                    <div className="text-xs text-gray-400 mb-1">{t.calc_output_ead}</div>
+                                    <div className="text-4xl font-extrabold text-white">{eadResult.toFixed(1)}<span className="text-xl text-gray-400 ml-2">{units === 'metric' ? 'm' : 'ft'}</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+                    {activeTab === 'limits' && (<div className="bg-gray-800 p-5 rounded-b-2xl shadow-lg"><h2 className="text-lg text-cyan-300 mb-2">{t.calc_limits_title}</h2><p className="text-xs text-gray-400 mb-4">{t.calc_limits_desc}</p><div className="overflow-x-auto"><table className="w-full text-left text-xs text-gray-300"><thead><tr className="border-b border-gray-700 text-gray-400"><th className="py-2 pr-2">{t.calc_limits_col_ppo2}</th><th className="py-2 px-2">{t.calc_limits_col_single}</th><th className="py-2 px-2">{t.calc_limits_col_24hr}</th><th className="py-2 pl-2">{t.calc_limits_col_cns}</th></tr></thead><tbody>{CNS_DATA.map(r => <tr key={r.p} className={`border-b border-gray-700 ${r.p > 1.4 ? 'text-yellow-400' : ''}`}><td className="py-2 font-bold">{r.p.toFixed(1)}</td><td>{r.s}</td><td>{r.d}</td><td>{r.r.toFixed(3)}%</td></tr>)}</tbody></table></div><div className="mt-4 bg-gray-900 p-3 rounded-lg"><p className="text-yellow-400 text-xs font-semibold text-center">{t.calc_limits_disclaimer}</p></div></div>)}
+                </div>
+            );
+        };
+
+
+        const LogbookScreen = () => {
+            const { isPro, promptProModal } = useBilling();
+            const [view, setView] = useState('list');
+            const [selectedLog, setSelectedLog] = useState(null);
+            const [logs, setLogs] = useState(() => {
+                const saved = localStorage.getItem('db_dive_logs');
+                return saved ? JSON.parse(saved) : [];
+            });
+            const [units, setUnits] = useState(() => localStorage.getItem('db_dive_units') || 'metric');
+
+            const [formData, setFormData] = useState({
+                location: '', purpose: '', date: new Date().toISOString().split('T')[0],
+                timeIn: '', timeOut: '', bottomTime: '', maxDepth: '', surfaceInterval: '',
+                gasMix: '21', startGas: '', endGas: '',
+                wetsuit: '', weights: '', fins: '', cylinder: '',
+                waves: '', surge: '', current: '', visibility: '', boatType: '', entryStyle: '',
+                instructorId: '', notes: '', disclaimerAgreed: false
+            });
+
+            useEffect(() => {
+                if (formData.timeIn && formData.timeOut) {
+                    const [inH, inM] = formData.timeIn.split(':').map(Number);
+                    const [outH, outM] = formData.timeOut.split(':').map(Number);
+                    let diff = (outH * 60 + outM) - (inH * 60 + inM);
+                    if (diff < 0) diff += 24 * 60;
+                    setFormData(prev => ({ ...prev, bottomTime: diff.toString() }));
+                }
+            }, [formData.timeIn, formData.timeOut]);
+
+            const handleToggleUnits = () => {
+                const newUnits = units === 'metric' ? 'imperial' : 'metric';
+                setUnits(newUnits);
+                localStorage.setItem('db_dive_units', newUnits);
+            };
+
+            const handleSave = () => {
+                const newLog = { ...formData, id: Date.now(), diveNumber: logs.length + 1, unitMode: units };
+                const updatedLogs = [...logs, newLog];
+                setLogs(updatedLogs);
+                localStorage.setItem('db_dive_logs', JSON.stringify(updatedLogs));
+                setView('list');
+                setFormData(prev => ({ ...prev, location: '', timeIn: '', timeOut: '', bottomTime: '', maxDepth: '', startGas: '', endGas: '', instructorId: '', notes: '', disclaimerAgreed: false }));
+            };
+
+            const getConvertedDepth = (log, currentUnits) => {
+                if (!log.maxDepth) return '-';
+                if (log.unitMode === currentUnits) return log.maxDepth;
+                if (currentUnits === 'metric') return (parseFloat(log.maxDepth) / 3.2808).toFixed(1);
+                return (parseFloat(log.maxDepth) * 3.2808).toFixed(0);
+            };
+
+            const totalTime = logs.reduce((acc, log) => acc + (parseInt(log.bottomTime) || 0), 0);
+            const totalHours = Math.floor(totalTime / 60);
+            const totalMins = totalTime % 60;
+
+            if (view === 'detail' && selectedLog) {
+                return (
+                    <div className="w-full max-w-sm mx-auto text-left p-4 pb-24 overflow-y-auto h-full fade-in">
+                        <button onClick={() => setView('list')} className="flex items-center text-cyan-400 hover:text-cyan-300 text-base font-medium mb-4"><ArrowLeftIcon /> {t.back_to_menu}</button>
+                        <div className="bg-gray-800 p-5 rounded-xl shadow-md border border-gray-700">
+                            <h2 className="text-2xl font-bold text-white mb-1">{t.logbook_dive_num} {selectedLog.diveNumber}</h2>
+                            <p className="text-cyan-400 text-sm mb-4">{selectedLog.date} • {selectedLog.location}</p>
+                            
+                            <div className="space-y-4">
+                                <div>
+                                    <h3 className="text-xs text-gray-500 uppercase tracking-wider mb-2 border-b border-gray-700 pb-1">Profile</h3>
+                                    <div className="grid grid-cols-2 gap-2 text-sm">
+                                        <div><span className="text-gray-400">In:</span> <span className="text-white">{selectedLog.timeIn}</span></div>
+                                        <div><span className="text-gray-400">Out:</span> <span className="text-white">{selectedLog.timeOut}</span></div>
+                                        <div><span className="text-gray-400">Bottom Time:</span> <span className="text-white font-bold text-cyan-300">{selectedLog.bottomTime} min</span></div>
+                                        <div><span className="text-gray-400">Max Depth:</span> <span className="text-white">{getConvertedDepth(selectedLog, units)} {units === 'metric' ? 'm' : 'ft'}</span></div>
+                                        <div><span className="text-gray-400">Surface Int:</span> <span className="text-white">{selectedLog.surfaceInterval || '-'} min</span></div>
+                                        <div className="col-span-2"><span className="text-gray-400">Purpose:</span> <span className="text-white">{selectedLog.purpose || '-'}</span></div>
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <h3 className="text-xs text-gray-500 uppercase tracking-wider mb-2 border-b border-gray-700 pb-1">Gear & Gas</h3>
+                                    <div className="grid grid-cols-2 gap-2 text-sm">
+                                        <div className="col-span-2"><span className="text-gray-400">Mix:</span> <span className="text-white">{selectedLog.gasMix}%</span></div>
+                                        <div><span className="text-gray-400">Start Gas:</span> <span className="text-white">{selectedLog.startGas || '-'}</span></div>
+                                        <div><span className="text-gray-400">End Gas:</span> <span className="text-white">{selectedLog.endGas || '-'}</span></div>
+                                        <div><span className="text-gray-400">Wetsuit:</span> <span className="text-white">{selectedLog.wetsuit || '-'}</span></div>
+                                        <div><span className="text-gray-400">Weights:</span> <span className="text-white">{selectedLog.weights || '-'}</span></div>
+                                        <div><span className="text-gray-400">Fins:</span> <span className="text-white">{selectedLog.fins || '-'}</span></div>
+                                        <div><span className="text-gray-400">Cylinder:</span> <span className="text-white">{selectedLog.cylinder || '-'}</span></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h3 className="text-xs text-gray-500 uppercase tracking-wider mb-2 border-b border-gray-700 pb-1">Conditions</h3>
+                                    <div className="grid grid-cols-2 gap-2 text-sm">
+                                        <div><span className="text-gray-400">Waves:</span> <span className="text-white">{selectedLog.waves || '-'}</span></div>
+                                        <div><span className="text-gray-400">Surge:</span> <span className="text-white">{selectedLog.surge || '-'}</span></div>
+                                        <div><span className="text-gray-400">Current:</span> <span className="text-white">{selectedLog.current || '-'}</span></div>
+                                        <div><span className="text-gray-400">Visibility:</span> <span className="text-white">{selectedLog.visibility || '-'}</span></div>
+                                        <div><span className="text-gray-400">Boat Type:</span> <span className="text-white">{selectedLog.boatType || '-'}</span></div>
+                                        <div><span className="text-gray-400">Entry:</span> <span className="text-white">{selectedLog.entryStyle || '-'}</span></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h3 className="text-xs text-gray-500 uppercase tracking-wider mb-2 border-b border-gray-700 pb-1">Verification</h3>
+                                    <div className="text-sm space-y-2">
+                                        <div><span className="text-gray-400">Instructor/Guide:</span> <span className="text-white">{selectedLog.instructorId || '-'}</span></div>
+                                        <div><span className="text-gray-400 block mb-1">Notes:</span> <div className="text-white bg-gray-900 p-3 rounded-lg border border-gray-700 whitespace-pre-wrap">{selectedLog.notes || '-'}</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                );
+            }
+
+            if (view === 'add') {
+                return (
+                    <div className="w-full max-w-sm mx-auto text-left p-4 pb-24 overflow-y-auto h-full fade-in">
+                        <button onClick={() => setView('list')} className="flex items-center text-cyan-400 hover:text-cyan-300 text-base font-medium mb-4"><ArrowLeftIcon /> {t.back_to_menu}</button>
+                        <h2 className="text-2xl font-bold text-white mb-4">{t.logbook_dive_num} {logs.length + 1}</h2>
+                        
+                        <div className="space-y-4">
+                            <div className="bg-gray-800 p-4 rounded-xl shadow-md border border-gray-700">
+                                <h3 className="text-cyan-400 font-bold mb-3 text-sm border-b border-gray-700 pb-1">Logistics</h3>
+                                <div className="grid grid-cols-2 gap-3">
+                                    <div><label className="text-xs text-gray-400">{t.logbook_date}</label><input type="date" value={formData.date} onChange={e => setFormData({...formData, date: e.target.value})} className="w-full bg-gray-900 text-white p-2 rounded-lg text-sm" /></div>
+                                    <div><label className="text-xs text-gray-400">{t.logbook_location}</label><input type="text" value={formData.location} onChange={e => setFormData({...formData, location: e.target.value})} className="w-full bg-gray-900 text-white p-2 rounded-lg text-sm" /></div>
+                                    <div className="col-span-2"><label className="text-xs text-gray-400">{t.logbook_purpose}</label><input type="text" value={formData.purpose} onChange={e => setFormData({...formData, purpose: e.target.value})} className="w-full bg-gray-900 text-white p-2 rounded-lg text-sm" /></div>
+                                </div>
+                            </div>
+
+                            <div className="bg-gray-800 p-4 rounded-xl shadow-md border border-gray-700">
+                                <h3 className="text-cyan-400 font-bold mb-3 text-sm border-b border-gray-700 pb-1">Profile ({units === 'metric' ? 'm/bar' : 'ft/psi'})</h3>
+                                <div className="grid grid-cols-2 gap-3">
+                                    <div><label className="text-xs text-gray-400">{t.logbook_time_in}</label><input type="time" value={formData.timeIn} onChange={e => setFormData({...formData, timeIn: e.target.value})} className="w-full bg-gray-900 text-white p-2 rounded-lg text-sm" /></div>
+                                    <div><label className="text-xs text-gray-400">{t.logbook_time_out}</label><input type="time" value={formData.timeOut} onChange={e => setFormData({...formData, timeOut: e.target.value})} className="w-full bg-gray-900 text-white p-2 rounded-lg text-sm" /></div>
+                                    <div><label className="text-xs text-gray-400">{t.logbook_bottom_time}</label><input type="number" value={formData.bottomTime} onChange={e => setFormData({...formData, bottomTime: e.target.value})} className="w-full bg-gray-900 text-cyan-300 font-bold p-2 rounded-lg text-sm" /></div>
+                                    <div><label className="text-xs text-gray-400">{t.logbook_max_depth}</label><input type="number" value={formData.maxDepth} onChange={e => setFormData({...formData, maxDepth: e.target.value})} className="w-full bg-gray-900 text-white p-2 rounded-lg text-sm" /></div>
+                                    <div className="col-span-2"><label className="text-xs text-gray-400">{t.logbook_surface_int}</label><input type="number" value={formData.surfaceInterval} onChange={e => setFormData({...formData, surfaceInterval: e.target.value})} className="w-full bg-gray-900 text-white p-2 rounded-lg text-sm" /></div>
+                                </div>
+                            </div>
+
+                            <div className="bg-gray-800 p-4 rounded-xl shadow-md border border-gray-700">
+                                <h3 className="text-cyan-400 font-bold mb-3 text-sm border-b border-gray-700 pb-1">Gas & Gear</h3>
+                                <div className="grid grid-cols-2 gap-3">
+                                    <div className="col-span-2"><label className="text-xs text-gray-400">{t.logbook_gas_mix}</label><input type="number" value={formData.gasMix} onChange={e => setFormData({...formData, gasMix: e.target.value})} className="w-full bg-gray-900 text-white p-2 rounded-lg text-sm" /></div>
+                                    <div><label className="text-xs text-gray-400">{t.logbook_start_gas}</label><input type="number" value={formData.startGas} onChange={e => setFormData({...formData, startGas: e.target.value})} className="w-full bg-gray-900 text-white p-2 rounded-lg text-sm" /></div>
+                                    <div><label className="text-xs text-gray-400">{t.logbook_end_gas}</label><input type="number" value={formData.endGas} onChange={e => setFormData({...formData, endGas: e.target.value})} className="w-full bg-gray-900 text-white p-2 rounded-lg text-sm" /></div>
+                                    <div><label className="text-xs text-gray-400">{t.logbook_wetsuit}</label><input type="text" value={formData.wetsuit} onChange={e => setFormData({...formData, wetsuit: e.target.value})} className="w-full bg-gray-900 text-white p-2 rounded-lg text-sm" /></div>
+                                    <div><label className="text-xs text-gray-400">{t.logbook_weights}</label><input type="text" value={formData.weights} onChange={e => setFormData({...formData, weights: e.target.value})} className="w-full bg-gray-900 text-white p-2 rounded-lg text-sm" placeholder="e.g. 4kg" /></div>
+                                    <div><label className="text-xs text-gray-400">{t.logbook_fins}</label><input type="text" value={formData.fins} onChange={e => setFormData({...formData, fins: e.target.value})} className="w-full bg-gray-900 text-white p-2 rounded-lg text-sm" /></div>
+                                    <div><label className="text-xs text-gray-400">{t.logbook_cylinder}</label><input type="text" value={formData.cylinder} onChange={e => setFormData({...formData, cylinder: e.target.value})} className="w-full bg-gray-900 text-white p-2 rounded-lg text-sm" /></div>
+                                </div>
+                            </div>
+
+                            <div className="bg-gray-800 p-4 rounded-xl shadow-md border border-gray-700">
+                                <h3 className="text-cyan-400 font-bold mb-3 text-sm border-b border-gray-700 pb-1">Conditions</h3>
+                                <div className="grid grid-cols-2 gap-3">
+                                    <div><label className="text-xs text-gray-400">{t.logbook_waves}</label><input type="text" value={formData.waves} onChange={e => setFormData({...formData, waves: e.target.value})} className="w-full bg-gray-900 text-white p-2 rounded-lg text-sm" /></div>
+                                    <div><label className="text-xs text-gray-400">{t.logbook_surge}</label><input type="text" value={formData.surge} onChange={e => setFormData({...formData, surge: e.target.value})} className="w-full bg-gray-900 text-white p-2 rounded-lg text-sm" /></div>
+                                    <div><label className="text-xs text-gray-400">{t.logbook_current}</label><input type="text" value={formData.current} onChange={e => setFormData({...formData, current: e.target.value})} className="w-full bg-gray-900 text-white p-2 rounded-lg text-sm" /></div>
+                                    <div><label className="text-xs text-gray-400">{t.logbook_visibility}</label><input type="text" value={formData.visibility} onChange={e => setFormData({...formData, visibility: e.target.value})} className="w-full bg-gray-900 text-white p-2 rounded-lg text-sm" /></div>
+                                    <div><label className="text-xs text-gray-400">{t.logbook_boat}</label><input type="text" value={formData.boatType} onChange={e => setFormData({...formData, boatType: e.target.value})} className="w-full bg-gray-900 text-white p-2 rounded-lg text-sm" /></div>
+                                    <div><label className="text-xs text-gray-400">{t.logbook_entry}</label><input type="text" value={formData.entryStyle} onChange={e => setFormData({...formData, entryStyle: e.target.value})} className="w-full bg-gray-900 text-white p-2 rounded-lg text-sm" /></div>
+                                </div>
+                            </div>
+
+                            <div className="bg-gray-800 p-4 rounded-xl shadow-md border border-gray-700">
+                                <h3 className="text-cyan-400 font-bold mb-3 text-sm border-b border-gray-700 pb-1">Verification</h3>
+                                <div className="space-y-3">
+                                    <div><label className="text-xs text-gray-400">{t.logbook_instructor}</label><input type="text" value={formData.instructorId} onChange={e => setFormData({...formData, instructorId: e.target.value})} className="w-full bg-gray-900 text-white p-2 rounded-lg text-sm" /></div>
+                                    <div><label className="text-xs text-gray-400">{t.logbook_notes}</label><textarea value={formData.notes} onChange={e => setFormData({...formData, notes: e.target.value})} className="w-full bg-gray-900 text-white p-2 rounded-lg text-sm h-24"></textarea></div>
+                                    
+                                    <div className="bg-gray-900 p-3 rounded-lg border-l-4 border-yellow-500 mt-4">
+                                        <h4 className="text-yellow-500 font-bold text-xs mb-1">{t.logbook_disclaimer_title}</h4>
+                                        <p className="text-[10px] text-gray-400 mb-2 leading-tight">{t.logbook_disclaimer_text}</p>
+                                        <label className="flex items-center space-x-2 cursor-pointer">
+                                            <input type="checkbox" checked={formData.disclaimerAgreed} onChange={e => setFormData({...formData, disclaimerAgreed: e.target.checked})} className="w-4 h-4 accent-cyan-500" />
+                                            <span className="text-xs text-white font-medium">{t.logbook_disclaimer_agree}</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button disabled={!formData.disclaimerAgreed} onClick={handleSave} className={`w-full font-bold py-4 rounded-xl shadow-lg mt-4 transition-all ${formData.disclaimerAgreed ? 'bg-cyan-500 text-gray-900 hover:bg-cyan-400' : 'bg-gray-700 text-gray-500 cursor-not-allowed'}`}>
+                                {t.logbook_save}
+                            </button>
+                        </div>
+                    </div>
+                );
+            }
+
+            return (
+                <div className="w-full max-w-sm mx-auto text-center p-4 pb-24 overflow-y-auto h-full fade-in">
+                    <div className="flex justify-between items-center mb-6">
+                        <h1 className="text-3xl font-extrabold text-white">{t.logbook_title}</h1>
+                        <button onClick={handleToggleUnits} className="bg-gray-800 text-cyan-400 text-xs font-bold px-3 py-1 rounded-full border border-gray-700">{units === 'metric' ? 'METRIC' : 'IMPERIAL'}</button>
+                    </div>
+                    
+                    <div className="bg-gray-800 p-6 rounded-2xl shadow-lg mb-6 border border-gray-700 flex flex-col items-center">
+                        <span className="text-gray-400 text-sm mb-1">{t.logbook_total_time}</span>
+                        <div className="text-4xl font-extrabold text-cyan-400">{totalHours}<span className="text-xl text-gray-500">h</span> {totalMins}<span className="text-xl text-gray-500">m</span></div>
+                        <div className="text-gray-500 text-xs mt-2">Total Dives: {logs.length}</div>
+                    </div>
+
+                    <button onClick={() => { if (!isPro && logs.length >= 2) promptProModal(); else setView('add'); }} className="w-full relative bg-cyan-600 hover:bg-cyan-500 text-white text-lg font-bold py-4 px-6 rounded-xl shadow-lg transform hover:scale-105 mb-6 border border-cyan-500">
+                        {!isPro && logs.length >= 2 && <LockIcon className="absolute top-1/2 left-4 -translate-y-1/2 w-6 h-6 text-yellow-400" />}
+                        {!isPro && logs.length >= 2 ? t.logbook_pro_lock : t.logbook_add}
+                    </button>
+
+                    <div className="space-y-3 text-left">
+                        {logs.slice().reverse().map(log => (
+                            <div key={log.id} onClick={() => { setSelectedLog(log); setView('detail'); }} className="bg-gray-800 p-4 rounded-xl shadow-md border border-gray-700 relative overflow-hidden cursor-pointer hover:bg-gray-750 transition-colors group">
+                                <div className="absolute top-0 left-0 w-1 h-full bg-cyan-500"></div>
+                                <div className="absolute top-1/2 right-4 -translate-y-1/2 text-gray-600 group-hover:text-cyan-400 transition-colors">
+                                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                                </div>
+                                <div className="flex justify-between items-start mb-2 pl-2 pr-6">
+                                    <div>
+                                        <h3 className="text-white font-bold text-lg">{t.logbook_dive_num} {log.diveNumber}</h3>
+                                        <p className="text-gray-400 text-xs">{log.date} • {log.location || 'Unknown'}</p>
+                                    </div>
+                                    <span className="bg-gray-900 text-cyan-300 text-xs font-bold px-2 py-1 rounded">{log.bottomTime} min</span>
+                                </div>
+                                <div className="flex gap-4 mt-3 pt-3 border-t border-gray-700 pl-2 pr-6">
+                                    <div><span className="block text-[10px] text-gray-500 uppercase">{t.logbook_max_depth}</span><span className="text-sm text-gray-200 font-semibold">{getConvertedDepth(log, units)} {units === 'metric' ? 'm' : 'ft'}</span></div>
+                                    <div><span className="block text-[10px] text-gray-500 uppercase">{t.logbook_gas_mix}</span><span className="text-sm text-gray-200 font-semibold">% {log.gasMix}</span></div>
+                                </div>
+                            </div>
+                        ))}
+                        {logs.length === 0 && <div className="text-gray-500 text-sm text-center py-8">{t.logbook_empty}</div>}
+                    </div>
+                </div>
+            );
+        };
+
+
+        const SupportScreen = () => (<div className="w-full max-w-sm mx-auto text-left p-4 overflow-y-auto h-full pb-24 fade-in"><h1 className="text-3xl font-bold text-white mb-2 text-center">{t.support_title}</h1><h2 className="text-lg font-semibold text-cyan-300 mb-4 text-center">{t.support_subtitle}</h2><p className="text-base text-gray-300 mb-6 text-center">{t.support_mission_text}</p><div className="bg-gray-800 p-5 rounded-2xl shadow-lg mb-4"><h2 className="text-lg font-bold text-cyan-300 mb-2">{t.support_opt1_title}</h2><p className="text-sm text-gray-300 mb-4">{t.support_opt1_desc}</p><button onClick={() => window.location.href = t.support_opt1_href} className="block w-full text-center bg-cyan-500 hover:bg-cyan-400 text-gray-900 text-base font-bold py-3 rounded-xl shadow-lg transition-transform active:scale-95 cursor-pointer relative z-10">{t.support_opt1_btn}</button></div><div className="bg-gray-800 p-5 rounded-2xl shadow-lg mb-4"><h2 className="text-lg font-bold text-cyan-300 mb-2">{t.support_opt2_title}</h2><p className="text-sm text-gray-300 mb-4">{t.support_opt2_desc}</p><button onClick={() => window.location.href = t.support_opt2_href} className="block w-full text-center bg-cyan-500 hover:bg-cyan-400 text-gray-900 text-base font-bold py-3 rounded-xl shadow-lg transition-transform active:scale-95 cursor-pointer relative z-10">{t.support_opt2_btn}</button></div><div className="bg-gray-800 p-5 rounded-2xl shadow-lg mb-4"><h2 className="text-lg font-bold text-cyan-300 mb-2 flex items-center justify-center"><YoutubeIcon /> <span className="ml-2">{t.support_opt_youtube_title}</span></h2><p className="text-sm text-gray-300 mb-4 text-center">{t.support_opt_youtube_desc}</p><button onClick={() => window.open(YOUTUBE_CHANNEL_URL, '_blank')} className="block w-full text-center bg-red-600 hover:bg-red-500 text-white text-base font-bold py-3 rounded-xl shadow-lg transition-transform active:scale-95 cursor-pointer relative z-10">{t.support_opt_youtube_btn}</button></div></div>);
+
+
+        const ContentScreen = ({ titleKey, subtitleKey, content, onBack }) => (<div className="w-full max-w-sm mx-auto text-left p-4 overflow-y-auto h-full pb-24 fade-in"><button onClick={onBack} className="flex items-center text-cyan-400 hover:text-cyan-300 text-base font-medium mb-4"><ArrowLeftIcon />{t.back_to_menu}</button><h1 className="text-3xl font-extrabold text-white mb-2">{t[titleKey]}</h1><h2 className="text-lg font-semibold text-cyan-300 mb-6">{t[subtitleKey]}</h2><div className="text-base text-gray-200 space-y-4 leading-relaxed">{Array.isArray(content) ? (typeof content[0] === 'string' ? <ul className="list-decimal list-outside pl-5 space-y-2">{content.map((c, i) => <li key={i}>{c}</li>)}</ul> : <ul className="space-y-4">{content.map((c, i) => <li key={i} className="bg-gray-800 p-4 rounded-xl shadow">{c.img && <img src={c.img} alt={c.text} className="w-full h-48 object-contain mb-4 rounded-lg bg-gray-900" />}<strong className="block text-cyan-300 text-lg mb-1">{c.text}</strong><span className="text-sm text-gray-300">{c.desc}</span></li>)}</ul>) : <Fragment><p>{content.p1}</p><p className="font-bold text-white">{content.p2}</p><ul className="list-disc list-outside pl-5 space-y-2"><li>{content.li1}</li><li>{content.li2}</li><li>{content.li3}</li></ul><p className="italic text-cyan-200 mt-4">{content.p3}</p></Fragment>}</div></div>);
+
+
+        const EntryScreen = ({ onChoose }) => {
+            const { isPro, promptProModal } = useBilling();
+            return (
+                <div className="w-full max-w-sm mx-auto text-center p-6 flex flex-col justify-center h-full fade-in relative">
+                    <div className="flex-1 flex flex-col justify-center items-center">
+                        <DiverIcon />
+                        <h1 className="text-4xl font-extrabold text-white mb-2">{t.entry_title}</h1>
+                        <p className="text-gray-400 mb-6">{t.entry_subtitle}</p>
+                        
+                        <button onClick={() => onChoose('free')} className="w-full bg-gray-700 hover:bg-gray-600 text-white font-bold py-4 px-6 rounded-xl shadow-lg mb-4 transition-transform hover:scale-105 border border-gray-600">
+                            <span className="block text-xl">{t.entry_free_btn}</span>
+                            <span className="block text-xs text-gray-400 mt-1 font-normal">{t.entry_free_desc}</span>
+                        </button>
+
+
+                        <button onClick={() => { if(isPro) onChoose('free'); else promptProModal(); }} className={`w-full font-bold py-4 px-6 rounded-xl shadow-lg mb-4 transition-transform hover:scale-105 border ${isPro ? 'bg-emerald-600 border-emerald-400 hover:bg-emerald-500' : 'bg-gradient-to-r from-cyan-600 to-cyan-500 border-cyan-400 hover:from-cyan-500 hover:to-cyan-400'} text-white`}>
+                            <span className="block text-xl">{isPro ? t.entry_enter_pro : t.entry_pro_btn}</span>
+                            <span className={`block text-xs mt-1 font-normal ${isPro ? 'text-emerald-100' : 'text-cyan-100'}`}>{isPro ? 'Unlocked' : t.entry_pro_desc}</span>
+                        </button>
+
+
+                        <button onClick={() => window.open(YOUTUBE_CHANNEL_URL, '_blank')} className="w-full bg-red-600 hover:bg-red-500 text-white font-bold py-3 px-6 rounded-xl shadow-lg transition-transform hover:scale-105 flex items-center justify-center gap-2 border border-red-400">
+                            <YoutubeIcon />
+                            <span>{t.entry_youtube_btn}</span>
+                        </button>
+                    </div>
+                    <div className="text-xs text-gray-500 mt-4">Dive Breathe: Scuba Tools</div>
+                </div>
+            );
+        };
+
+
+        const App = () => {
+            const [activeScreen, setActiveScreen] = useState('entry'); 
+            const [subScreen, setSubScreen] = useState(null);
+            const { isPro, promptProModal } = useBilling();
+            const [showLangMenu, setShowLangMenu] = useState(false);
+
+
+            const handleEntryChoice = (choice) => {
+                setActiveScreen('breathe');
+            };
+
+
+            useEffect(() => {
+                if (activeScreen === 'entry' && isPro) {
+                }
+            }, [isPro, activeScreen]);
+
+
+            const renderScreen = () => {
+                if (activeScreen === 'entry') return <EntryScreen onChoose={handleEntryChoice} />;
+                if (subScreen) return <ContentScreen titleKey={subScreen === 'why' ? 'why_title' : subScreen === 'basics' ? 'basics_title' : 'signals_title'} subtitleKey={subScreen === 'why' ? 'why_subtitle' : subScreen === 'basics' ? 'basics_subtitle' : 'signals_subtitle'} content={subScreen === 'why' ? {p1:t.why_p1, p2:t.why_p2, li1:t.why_li1, li2:t.why_li2, li3:t.why_li3, p3:t.why_p3} : subScreen === 'basics' ? CONTENT_DATA.basics : CONTENT_DATA.signals} onBack={() => setSubScreen(null)} />;
+                switch (activeScreen) {
+                    case 'drills': return <DrillsScreen />;
+                    case 'tips': return <SpecialtyTipsScreen />;
+                    case 'calc': return <CalculatorScreen />;
+                    case 'logbook': return <LogbookScreen />;
+                    default: return <BreathTrainer onShowWhy={() => setSubScreen('why')} onShowBasics={() => setSubScreen('basics')} onShowSignals={() => setSubScreen('signals')} onShowSupport={() => setActiveScreen('')} />;
+                }
+            };
+
+
+            const NavItem = ({ screen, icon, label, locked }) => (
+                <button onClick={() => { if (locked && !isPro) promptProModal(); else { setSubScreen(null); setActiveScreen(screen); } }} className={`flex flex-col items-center justify-center pt-2 pb-1 ${activeScreen === screen && !subScreen ? 'text-cyan-400' : 'text-gray-500'}`}>
+                    <div className="relative">{React.cloneElement(icon, { className: "w-6 h-6" })}{locked && !isPro && <LockIcon className="absolute -top-1 -right-2 w-3 h-3 text-yellow-400" />}</div>
+                    <span className="text-[10px] font-medium mt-1">{label}</span>
+                </button>
+            );
+
+
+            return (
+                <div className="flex flex-col h-full max-h-full relative overflow-hidden bg-gray-900">
+                    <header className="absolute top-0 right-0 h-16 flex items-center px-4 z-40">
+                        <button onClick={() => setShowLangMenu(p => !p)} className="text-gray-400 p-2 hover:text-white transition-colors"><GlobeIcon /></button>
+                    </header>
+                    
+                    {showLangMenu && (
+                        <div className="lang-menu" onMouseLeave={() => setShowLangMenu(false)}>
+                            {LANGUAGES.map(lang => (
+                                <a key={lang.code} href={lang.href} className="lang-menu-item">{lang.name}</a>
+                            ))}
+                        </div>
+                    )}
+                    <ProModal />
+                    <main className="flex-1 overflow-y-auto min-h-0 pt-14">{renderScreen()}</main>
+                    {activeScreen !== 'entry' && !subScreen && (
+                        <nav className="flex-shrink-0 w-full max-w-sm mx-auto grid grid-cols-6 gap-1 bg-gray-900 border-t border-gray-800 pb-safe">
+                            <NavItem screen="breathe" icon={<HeartIcon />} label={t.nav_breathe} />
+                            <NavItem screen="drills" icon={<ClockIcon />} label={t.nav_drills} locked={true} />
+                            <NavItem screen="tips" icon={<LightBulbIcon />} label={t.nav_tips} locked={true} /> 
+                            <NavItem screen="calc" icon={<CalculatorIcon />} label={t.nav_calc} locked={true} />
+                            <NavItem screen="logbook" icon={<BookIcon />} label={t.nav_logbook} locked={true} />
+                        </nav>
+                    )}
+                </div>
+            );
+        };
+
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<MessageProvider><BillingProvider><App /></BillingProvider></MessageProvider>);
+    </script>
 </body>
 </html>
